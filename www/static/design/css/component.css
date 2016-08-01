@@ -1,0 +1,2268 @@
+/*此样式表 pc、host环境均使用
+    元素模块样式
+*/
+.hidden {
+    display: none;
+}
+
+/***********************  component  image  start *****************************/
+/*元素遮罩*/
+.img-layer1:before {
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    border: 1px solid #fff;
+    pointer-events: none;
+}
+
+.img-layer2:before {
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    border: 5px solid #fff;
+    pointer-events: none;
+}
+
+.img-layer3:before {
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    border: 1px solid #fff;
+    pointer-events: none;
+}
+
+/***********************  component  image  end *****************************/
+
+
+/***********************  component  btn  start *****************************/
+
+.wqdComponentBtn1 {
+    background: #3d9be9;
+}
+
+.wqdComponentBtn2 {
+    color: #75c55d;
+    background: #fff;
+    border: 2px solid #75c55d;
+    border-radius: 5px;
+}
+
+.wqdComponentBtn2 em {
+    color: #75c55d;
+}
+
+.wqdComponentBtn3 {
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+    border: none;
+}
+
+.wqdComponentBtn3 .componentTR50 {
+    position: absolute;
+    right: 0;
+    bottom: 49% !important;
+    border-left: 0;
+    border-right: 100px solid transparent !important;
+    border-bottom: 100px solid #e6b871;
+}
+
+.wqdComponentBtn3 .componentBR50 {
+    position: absolute;
+    right: 0;
+    top: 49% !important;
+    border-left: 0;
+    border-right: 100px solid transparent !important;
+    border-top: 100px solid #e6b871;
+}
+
+.wqdComponentBtn3 .componentCenter {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 98px;
+    background: #e6b871;
+}
+
+.wqdComponentBtn4 {
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+    border: none;
+}
+
+.wqdComponentBtn4 .componentTL50 {
+    position: absolute;
+    left: 0;
+    bottom: 49% !important;
+    border-left: 100px solid transparent !important;
+    border-right: 0;
+    border-bottom: 100px solid #2b6ca3;
+}
+
+.wqdComponentBtn4 .componentBL50 {
+    position: absolute;
+    left: 0;
+    top: 49% !important;
+    border-left: 100px solid transparent !important;
+    border-right: 0;
+    border-top: 100px solid #2b6ca3;
+}
+
+.wqdComponentBtn4 .componentCenter {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 98px;
+    right: 0;
+    background: #2b6ca3;
+}
+
+.wqdComponentBtn5 {
+    color: #fff;
+    border-radius: 50%;
+    background: #337ab7;
+}
+
+.wqdComponentBtn6 {
+    color: #fff;
+    background: #deb184;
+}
+
+.wqdComponentBtn7 {
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+    border: none;
+}
+
+.wqdComponentBtn7 .componentTL50 {
+    position: absolute;
+    left: 0;
+    bottom: 49% !important;
+    border-left: 58px solid transparent !important;
+    border-right: 0;
+    border-bottom: 100px solid #3dc288;
+}
+
+.wqdComponentBtn7 .componentBL50 {
+    position: absolute;
+    left: 0;
+    top: 49% !important;
+    border-left: 58px solid transparent !important;
+    border-right: 0;
+    border-top: 100px solid #3dc288;
+}
+
+.wqdComponentBtn7 .componentCenter {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 56px;
+    right: 56px;
+    background: #3dc288;
+}
+
+.wqdComponentBtn7 .componentTR50 {
+    position: absolute;
+    right: 0;
+    bottom: 49% !important;
+    border-left: 0;
+    border-right: 58px solid transparent !important;
+    border-bottom: 100px solid #3dc288;
+}
+
+.wqdComponentBtn7 .componentBR50 {
+    position: absolute;
+    right: 0;
+    top: 49% !important;
+    border-left: 0;
+    border-right: 58px solid transparent !important;
+    border-top: 100px solid #3dc288;
+}
+
+.wqdComponentBtn8 {
+    background: #3dc288;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.wqdComponentBtn9 {
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+    border: none;
+}
+
+.wqdComponentBtn9 .componentBR0 {
+    position: absolute;
+    right: 0;
+    bottom: 0 !important;
+    border-left: 0;
+    border-right: 100px solid transparent !important;
+    border-bottom: 100px solid #3d9be9;
+}
+
+.wqdComponentBtn9 .componentTR0 {
+    position: absolute;
+    right: 0;
+    top: 0 !important;
+    border-left: 0;
+    border-right: 100px solid transparent !important;
+    border-top: 100px solid #3d9be9;
+}
+
+.wqdComponentBtn9 .componentCenter {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 98px;
+    background: #3d9be9;
+}
+
+.wqdComponentBtn10 {
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+    border: none;
+}
+
+.wqdComponentBtn10 .componentBL0 {
+    position: absolute;
+    left: 0;
+    bottom: 0 !important;
+    border-left: 58px solid transparent !important;
+    border-right: 0;
+    border-bottom: 100px solid #01b1af;
+}
+
+.wqdComponentBtn10 .componentTL0 {
+    position: absolute;
+    left: 0;
+    top: 0 !important;
+    border-left: 58px solid transparent !important;
+    border-right: 0;
+    border-top: 100px solid #01b1af;
+}
+
+.wqdComponentBtn10 .componentCenter {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 56px;
+    right: 56px;
+    background: #01b1af;
+}
+
+.wqdComponentBtn10 .componentBR0 {
+    position: absolute;
+    right: 0;
+    bottom: 0 !important;
+    border-left: 0;
+    border-right: 58px solid transparent !important;
+    border-bottom: 100px solid #01b1af;
+}
+
+.wqdComponentBtn10 .componentTR0 {
+    position: absolute;
+    right: 0;
+    top: 0 !important;
+    border-left: 0;
+    border-right: 58px solid transparent !important;
+    border-top: 100px solid #01b1af;
+}
+
+
+/***********************  component  btn  end *****************************/
+
+
+/***********************  control  form  start *****************************/
+
+.wqdControlForm {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: none;
+}
+
+.wqdFormIframeWarp, .wqdFormIframeWarp iframe {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+#HTMLDATA .wqdFormIframeWarp:before {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#HTMLDATA .wqdControlForm:before, .wqd-carouseOverlay .wqdControlForm:before {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border: 1px dashed #1ec1fd;
+}
+
+.wqdControlFormEl1 {
+    width: 100%;
+    height: 100%;
+}
+
+.wqdControlFormEl1 input {
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    background: #fff;
+    text-align: left;
+    color: #666;
+    font-size: 14px;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+}
+
+.wqdControlFormEl2 {
+    width: 100%;
+    height: 100%;
+}
+
+.wqdControlFormEl2 textarea {
+    height: 100% !important;
+    width: 100% !important;
+    padding: 10px;
+    background: #fff;
+    outline: none;
+    text-align: left;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.2;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+}
+
+.wqdControlFormEl3 {
+    width: 100%;
+    height: 100%;
+}
+
+.wqdControlFormEl3 i {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: url(../images/v2/design/columnMenu/2.png) -0px -45px no-repeat;
+}
+
+.wqdControlFormEl3 i.on {
+    background: url(../images/v2/design/columnMenu/2.png) -0px -0px no-repeat;
+}
+
+.wqdControlFormEl3 label {
+    position: absolute;
+    top: 50%;
+    left: 38px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: inline;
+    margin: 0;
+    color: #666;
+    font-weight: normal;
+}
+
+.wqdControlFormEl3 input {
+    display: none;
+}
+
+.wqdControlFormEl4 {
+    width: 100%;
+    height: 100%;
+}
+
+.wqdControlFormEl4 i {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: url(../images/v2/design/columnMenu/2.png) -139px -44px no-repeat;
+}
+
+.wqdControlFormEl4 i.on {
+    background: url(../images/v2/design/columnMenu/2.png) -140px -0px no-repeat;
+}
+
+.wqdControlFormEl4 label {
+    position: absolute;
+    top: 50%;
+    left: 38px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: inline;
+    margin: 0;
+    color: #666;
+    font-weight: normal;
+}
+
+.wqdControlFormEl4 input {
+    display: none;
+}
+
+
+/*下拉框暂时不能进行高度拉动*/
+
+.wqdControlFormEl5 {
+    height: 100%;
+}
+
+.wqdControlFormEl5 p {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    background: #fff;
+    color: #666;
+    cursor: pointer;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    display: table;
+}
+
+.wqdControlFormEl5 p.on {
+    color: #59c4ff;
+}
+
+.wqdControlFormEl5 p i {
+    float: right;
+    width: 40px;
+    height: 100%;
+    /* margin-right:-10px; */
+    background: url(../images/v2/design/columnMenu/3.png) 0px center no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.wqdControlFormEl5 p i.on {
+    background-position: -40px -40px;
+}
+
+.wqdControlFormEl5 p span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.wqdControlFormEl5 ul {
+    display: none;
+    transition: ease height .2s;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    /* top:41px; */
+    width: 100%;
+    padding: 3px 0;
+    background: #fff;
+    overflow: hidden;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+}
+
+.wqdControlFormEl5.on ul {
+    display: block;
+}
+
+.wqdControlFormEl5 ul li {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
+}
+
+.wqdControlFormEl5 ul li.on {
+    background: #def3ff;
+}
+
+.wqdControlFormEl5 ul li:hover {
+    background: #def3ff;
+}
+
+.wqdControlFormEl6 {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.wqdControlFormEl6 input {
+    background-color: rgba(0, 0, 0, 0);
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 40px;
+    text-align: left;
+    color: #666;
+    font-size: 14px;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    position: relative;
+    z-index: 2;
+}
+
+.wqdControlFormEl6 span {
+    position: absolute;
+    display: block;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 0;
+    height: 40px;
+    width: 40px;
+    background: url(../images/v2/design/columnMenu/2.png) no-repeat -80px 0;
+}
+
+.wqdControlFormEl7 {
+    width: 100%;
+    height: 100%;
+}
+
+.wqdControlFormEl7 a {
+    height: 100%;
+    width: 100%;
+    background: #78bade;
+    color: #fff;
+    border-radius: 4px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+/***********************  control  form  end *****************************/
+
+
+/***********************  control  share  start *****************************/
+
+ul.wqdControlShare {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 0px
+}
+
+
+/*ul.wqdControlShare li{display:inline-block;vertical-align: middle;width: 10.9107%;height:100%;padding:0;margin: 0px 1.6875%;margin-top: 3px;}*/
+
+ul.wqdControlShare li {
+    display: inline-block;
+    vertical-align: middle;
+    width: 36px;
+    height: 100%;
+    padding: 0;
+    margin-right: 8px;
+}
+
+
+/***********************  control  share  end *****************************/
+
+
+/***********************  control  follow  start *****************************/
+
+ul.wqdControlFollow {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 0px
+}
+
+
+/*ul.wqdControlFollow li{display:inline-block;vertical-align: middle;width: 10.9107%;height:100%;padding:0;margin: 0px 1.6875%;margin-top: 3px;}*/
+
+ul.wqdControlFollow li {
+    display: inline-block;
+    vertical-align: middle;
+    width: 36px;
+    height: 100%;
+    padding: 0;
+    margin-right: 8px;
+}
+
+ul.vertical li {
+    width: 100%;
+}
+
+ul.wqdControlFollow li.novisible, ul.wqdControlShare li.novisible {
+    display: none!important;
+}
+
+
+/***********************  control  follow  end *****************************/
+
+
+/*关注分享发布后样式start*/
+
+.wqd-share svg:not(:root), .wqd-follow svg:not(:root) {
+    cursor: pointer;
+}
+
+
+/*关注分享发布后样式end*/
+
+
+/***********************  control  article  start *****************************/
+
+.wqdControlArticle {
+    width: auto !important;
+    height: auto !important;
+}
+
+.wqdControlArticle .wqdelementEdit.wqdArticleListContainer {
+    position: relative;
+}
+
+.wqdControlArticle .wqdelementEditBox.clearAbsolute {
+    position: static;
+    overflow: visible;
+}
+
+.wqdControlArticle.wqdselected:before {
+    z-index: 1;
+}
+
+.wqdControlArticle ul.wqdArticleList {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.wqdControlArticle ul.wqdArticleList li {
+    display: block;
+}
+
+.wqdControlArticle ul.wqdArticleList li:last-child {
+    margin-bottom: 0 !important;
+}
+
+.wqdArticleListContainer .articleListTitle .wqdTitleWarp {
+    color: #333;
+}
+
+.wqdArticleListContainer .articleListTitle h3 {
+    line-height: 1.3;
+    font-weight: inherit;
+    font-size: 24px;
+}
+
+.wqdArticleListContainer .articleListContent {
+    color: #666;
+    font-size: 14px;
+}
+
+.wqdArticleListContainer .articleListTime, .wqdArticleListContainer .artListFollow, .wqdArticleListContainer .artListViewcount {
+    color: #999;
+}
+
+.wqdArticleListContainer .articleListTime p {
+    line-height: 1;
+    font-size: 14px;
+}
+
+.wqdArticleListContainer .artListViewcount svg {
+    float: left;
+    height: 18px;
+    width: 23px;
+}
+
+.wqdArticleListContainer .artListViewcount span {
+    float: left;
+    font-size: 14px;
+}
+
+.wqdArticleListContainer .artListFollow {
+    cursor: pointer;
+}
+
+.wqdArticleListContainer .artListFollow svg {
+    float: left;
+    height: 19px;
+    width: 22px;
+}
+
+
+/*// .wqdArticleListContainer .articleListLike:hover svg path {fill:#ff6a6a;}*/
+
+.wqdArticleListContainer .artListFollow span {
+    float: left;
+    font-size: 14px;
+}
+
+.wqdArticleListContainer .articleListBtn {
+    color: #fff;
+}
+
+.wqdArticleListContainer .articleListBtn a {
+    vertical-align: top;
+    background: #ff8a93;
+    border-radius: 20px;
+    font-size: 12px;
+    cursor: pointer;
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+.wqdArticleListContainer .articleListBtn a:hover {
+    background: #e07981;
+}
+
+.wqdArticleListContainer .articleListBtn a em {
+    font-style: inherit;
+}
+
+.wqdArticleListContainer .articleListLine div.wqd-line {
+    border-top: 1px solid #dcdcdc;
+}
+
+
+/***********************  control  article  end *****************************/
+
+
+/*轮播图控件*/
+
+.carouselBtnWrap {
+    width: 230px;
+    height: auto;
+}
+
+.carouselBtnWrap .carousel-control {
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    margin-top: -18px;
+}
+
+.carouselBtnWrap>li {
+    width: 100%;
+    height: 80px;
+    ;
+    overflow: hidden;
+    position: relative;
+}
+
+.carouselBtnWrap > li.cellBox {
+    height: auto;
+    border: 1px dashed #fff;
+    border-radius: 5px;
+}
+
+.carouselBtnWrap > li.cellBox.select, .carouselBtnWrap > li.controlBox div.select {
+    border: 1px dashed #999;
+    border-radius: 5px;
+}
+
+.wqdCarousel .carousel-control {
+    display: block;
+}
+
+.cellBox div.controlBoxDiv {
+    display: inline-block;
+    position: relative;
+    width: 112px;
+    line-height: 100%;
+    height: 70px;
+    border: 1px solid #fff;
+}
+
+.cellBox div.div5, .cellBox div.div6 {
+    height: 100px;
+}
+
+ul.lunboConment {
+    width: 100px;
+}
+
+ul.lunboConment li {
+    width: 100%;
+}
+
+.cellBox .carousel-indicators {
+    text-align: left;
+    left: 0;
+    margin: 15px;
+    position: static;
+}
+
+.wqdCarousel .carousel-indicators li {
+    margin: 3px;
+}
+
+.wqdCarousel .indicator_0 li.active {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #9bdcff;
+    background: #9bdcff;
+}
+
+.wqdCarousel .indicator_0 li {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #aaa;
+    background: none;
+}
+
+.wqdCarousel .indicator_1 li.active {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #9bdcff;
+    background: #fff;
+}
+
+.wqdCarousel .indicator_1 li {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #aaa;
+    background: #aaa;
+}
+
+.wqdCarousel .indicator_2 li.active {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #9bdcff;
+    background: #9bdcff;
+    border-radius: 0;
+}
+
+.wqdCarousel .indicator_2 li:not(.active) {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #aaa;
+    border-radius: 0;
+}
+
+.wqdCarousel .indicator_3 li.active {
+    width: 15px;
+    height: 15px;
+    background-color: #9bdcff;
+}
+
+.wqdCarousel .indicator_3 li {
+    width: 15px;
+    height: 15px;
+    background: #ccc;
+}
+
+.wqdCarousel .indicator_4 li.active, .wqdCarousel .indicator_5 li.active {
+    width: 30px;
+    height: 30px;
+    background-color: #9bdcff;
+    border-radius: 100px;
+    color: #fff;
+    text-align: center
+}
+
+.wqdCarousel .indicator_4 li, .wqdCarousel .indicator_5 li {
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    text-indent: 0;
+    font-size: 12px;
+    text-align: center;
+}
+
+.wqdCarousel .indicator_3 li, .wqdCarousel .indicator_4 li, .wqdCarousel .indicator_5 li {
+    background-color: #ebebeb;
+}
+
+.wqdCarousel .indicator_4 li span, .wqdCarousel .indicator_5 li span {
+    line-height: 30px;
+}
+
+.wqdCarousel .indicator_5 li {
+    border-radius: 8px;
+}
+
+.wqdCarousel .indicator_5 li.active {
+    border-radius: 8px;
+}
+
+.wqdCarousel .indicator_6 li.active {
+    width: 30px;
+    height: 30px;
+    background-color: #9bdcff;
+    border-radius: 0px;
+}
+
+.wqdCarousel .indicator_6 li {
+    width: 14px;
+    height: 30px;
+    background: #ccc;
+    border-radius: 0px;
+    opacity: 1;
+    transition: width 0.5s;
+    -moz-transition: width 0.2s;
+    /* Firefox 4 */
+    -webkit-transition: width 0.2s;
+    /* Safari 和 Chrome */
+    -o-transition: width 0.2s;
+}
+
+.wqdCarousel .indicator_7 li.active {
+    width: 30px;
+    height: 12px;
+    background-color: #9bdcff;
+    border-radius: 0px;
+}
+
+.wqdCarousel .indicator_7 li {
+    width: 30px;
+    height: 12px;
+    background: #ccc;
+    border-radius: 0px;
+}
+
+.cellBox .indicator_3, .cellBox .indicator_7 {
+    top: 20px;
+}
+
+.wqdCarousel .indicator_1 li.active {
+    background-color: transparent!important;
+}
+
+.wqdCarousel .indicator_2 li:not(.active), .wqdCarousel .indicator_0 li:not(.active) {
+    background-color: transparent!important;
+}
+
+.wqdCarousel .indicator_3 li, .wqdCarousel .indicator_4 li, .wqdCarousel .indicator_5 li, .wqdCarousel .indicator_6 li, .wqdCarousel .indicator_7 li {
+    border: none!important;
+}
+
+@media (max-width: 767px) {
+    .wqdCarousel .indicator_0 li, .wqdCarousel .indicator_1 li, .wqdCarousel .indicator_3 li, .wqdCarousel .indicator_0 li.active, .wqdCarousel .indicator_1 li.active, .wqdCarousel .indicator_3 li.active {
+        width: 10px;
+        height: 10px;
+    }
+    .wqdCarousel .indicator_4 li.active, .wqdCarousel .indicator_5 li.active, .wqdCarousel .indicator_4 li, .wqdCarousel .indicator_5 li {
+        width: 20px;
+        height: 20px;
+        text-align: center;
+    }
+    .wqdCarousel .indicator_5 li, .wqdCarousel .indicator_5 li.active {
+        border-radius: 4px;
+    }
+    .wqdCarousel .indicator_4 li span, .wqdCarousel .indicator_5 li span {
+        line-height: 19px;
+    }
+}
+
+.controlBox .carousel-control.left {
+    left: 10%;
+}
+
+.controlBox .carousel-control.right {
+    right: 10%;
+}
+
+.wqdCarousel .carousel-control_1 {
+    border-radius: 100px;
+}
+
+.wqdCarousel .carousel-control_2 {
+    border-radius: 5px;
+}
+
+.wqdCarousel .carousel-control_3 {
+    border-radius: 0px;
+}
+
+.wqdCarousel .carousel-control_4 {
+    border-radius: 0px 100px 100px 0px;
+}
+
+.wqdCarousel .carousel-control_4.right {
+    border-radius: 100px 0px 0px 100px;
+}
+
+.cellBox .carousel-control_5, .cellBox .carousel-control_6 {
+    width: 36px;
+    height: 74px;
+    border-radius: 5px;
+    line-height: 74px;
+    margin-top: -37px;
+    padding: 0;
+}
+
+.wqdelementEdit .carousel-control_5 {
+    width: 36px;
+    height: 74px;
+    border-radius: 5px;
+    line-height: 74px;
+    margin-top: -37px;
+    padding: 0;
+}
+
+.wqdelementEdit .carousel-control_6 {
+    height: 74px;
+    margin-top: 0;
+    border-radius: 0;
+    position: absolute;
+    background: none;
+    padding: 0;
+    width: 36px;
+    background-color: transparent!important;
+}
+
+.cellBox .carousel-control_6 {
+    height: 74px;
+}
+
+.cellBox .carousel-control.left, .cellBox .carousel-control.right {
+    background-image: none;
+    background-color: #ccc;
+}
+
+.cellBox .carousel-control_6 {
+    top: 50%;
+    margin-top: -37px;
+}
+
+.cellBox .carousel-control_6.left {
+    background-color: transparent;
+}
+
+.wqdelementEdit .carousel-control_6.left {
+    left: 0!important;
+    background-color: none;
+}
+
+.wqdelementEdit .carousel-control_6.right {
+    right: 0!important;
+}
+
+.cellBox .carousel-control_6.right {
+    right: 10%;
+}
+
+.carouselBtnWrap a.carousel-control_1.right, .carouselBtnWrap a.carousel-control_2.right, .carouselBtnWrap a.carousel-control_3.right, .carouselBtnWrap a.carousel-control_4.right, .carouselBtnWrap a.carousel-control_5.right, .carouselBtnWrap a.carousel-control_6.right {
+    background-color: #9bdcff;
+}
+
+.controlBoxDiv .carousel-control_5 svg:not(:root), .controlBoxDiv .carousel-control_6 svg:not(:root) {
+    position: absolute;
+    width: 15px;
+    top: 50%;
+    margin-top: -24px;
+    right: 30%;
+}
+
+.wqdelementEdit .carousel-control_5 svg:not(:root), .wqdelementEdit .carousel-control_6 svg:not(:root) {
+    position: static;
+    margin-top: 0;
+    width: 15px;
+}
+
+/* .wqdelementEdit a.carousel-control:hover {
+    background-color: #9bdcff !important;
+} */
+
+
+/*取消渐变*/
+
+.wqdCarousel .carousel-control.left, .wqdCarousel .carousel-control.right {
+    z-index: 51;
+    background-image: none;
+    opacity: 1;
+}
+
+.carouselBtnWrap > li.controlBox {
+    height: auto;
+    overflow: hidden;
+    padding-top: 18px;
+}
+
+.cellBox .carousel-control_6.right {
+    background: url(../images/v2/design/elementEdit/Carousel/ttbg.png) no-repeat;
+}
+
+.cellBox .carousel-control {
+    opacity: 1
+}
+
+
+/*.wqd_table{ width:100%; height:100%;}*/
+
+
+/*瀑布流样式*/
+
+.atlasWrap {
+    margin-right: -30px;
+    position: static;
+    width: auto;
+}
+
+.wqdPictureFalls {
+    width: 100%!important;
+}
+
+.wqdPictureFalls .post {
+    width: 33.2%;
+    padding: 0 30px 30px 0;
+}
+
+.wqdPictureFalls .post>.wrap {
+    border: 1px solid #ccc;
+}
+
+.wqdPictureFalls .post>.wrap a, .wqdPictureUsual>li .wrap a {
+    position: relative;
+}
+
+.atlasWrap li a>span.initBg, .atlasWrap3 li a>span.initBg {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+@media (min-width: 768px) {
+    .wqdPictureFalls .post a>span, .wqdPictureUsual>li .wrap a>span {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: all 0.3s ease 0s;
+        -webkit-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        z-index: 9;
+    }
+    .wqdPictureFalls .post .wrap:hover a>span, .wqdPictureUsual>li .wrap:hover a>span {
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+    .wqdIphoneView .wqdPictureFalls .post .wrap:hover a>span, .wqdIphoneView .wqdPictureUsual>li .wrap:hover a>span {
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
+
+@media (max-width: 767px) {
+    .wqdPictureFalls .post a>span, .wqdPictureUsual>li .wrap a>span {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: all 0.3s ease 0s;
+        -webkit-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        z-index: 9;
+    }
+    .wqdPictureFalls .post .wrap:hover a>span, .wqdPictureUsual>li .wrap:hover a>span {
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+    .wqdIphoneView .wqdPictureFalls .post .wrap:hover a>span, .wqdIphoneView .wqdPictureUsual>li .wrap:hover a>span {
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
+
+.wqdPictureFalls .post>.wrap div, .wqdPictureUsual li >.wrap div {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+.wqdPictureUsual li >.wrap div {
+    height: auto;
+}
+
+.wqdPictureFalls .post div h5 {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.wqdPictureUsual li div h5 {
+    margin: 15px 0 15px 0;
+    text-align: center;
+    padding: 0 10%;
+}
+
+.wqdPictureFalls .post a {
+    display: block;
+    text-align: center;
+    /*border:1px solid #d5d4d4;*/
+    /*box-shadow: 0px 0px 8px #000000;*/
+    color: #333;
+}
+
+.wqdPictureFalls .post a:hover {
+    color: #333;
+}
+
+.wqdPictureFalls .post a img {
+    width: 100%;
+    height: auto;
+}
+
+
+/*一般布局*/
+
+.wqdPictureUsual {
+    text-align: left;
+    font-size: 0px;
+}
+
+.wqdPictureUsual>li {
+    width: 33.2%;
+    height: auto;
+    display: inline-block;
+    padding: 0 30px 30px 0;
+    vertical-align: top
+}
+
+.wqdPictureUsual a {
+    display: block;
+    color: #333;
+}
+
+.wqdPictureUsual a:hover {
+    color: #333;
+}
+
+.wqdPictureUsual img {
+    width: 100%;
+    height: auto;
+}
+
+
+/*图册3样式*/
+
+.atlasWrap3 {
+    white-space: nowrap;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.leftBar {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50px;
+}
+
+.rightBar {
+    z-index: 10;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 50px;
+}
+
+.atlasWrap3 .scrollBox {
+    width: 800000000px;
+    height: 100%;
+}
+
+.leftBar:hover, .rightBar:hover {
+    background-color: #fff;
+    opacity: 0.8;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+}
+
+.autoscroll {
+    overflow: hidden;
+    font-size: 0;
+    float: left;
+}
+
+.autoscroll.copy {
+    float: left;
+}
+
+.autoscroll, .autoscroll li .wrap, .autoscroll li .wrap a {
+    display: block;
+    height: 100%;
+    width: auto;
+}
+
+.autoscroll li {
+    display: inline-block;
+    height: 100%;
+}
+
+.autoscroll li img {
+    height: 100%;
+    width: auto;
+    display: none;
+}
+
+.autoscroll li .wrap a {
+    position: relative;
+}
+
+.autoscroll li .wrap a span {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+}
+
+.atlasWrap3 div.txt_box {
+    display: none;
+}
+
+.atlasWrap3 li {
+    margin-right: 30px;
+    overflow: hidden;
+    width: 577px;
+}
+
+.wqdIphoneView .atlasWrap3 li[data_pic='2'] {
+    margin-right: 0
+}
+
+.atlasWrap3 li div.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.atlasWrap3 li[data_pic='1'] a {
+    background: url(http://img.wqdian.com/group3/M00/9F/82/yq0KZFagcX-AKhfpAAV1ILj19ns536.png) no-repeat center center;
+    background-size: cover;
+}
+
+.atlasWrap3 li[data_pic='2'] a {
+    background: url(http://img.wqdian.com/group3/M00/9F/84/yq0KZVagcYSARJvxAAQHEje-430833.png) no-repeat center center;
+    background-size: cover;
+}
+
+
+/*图册4样式*/
+
+.atlasWrap4 {
+    font-size: 0;
+}
+
+.atlasWrap4 .wqd-atlas {
+    white-space: nowrap;
+}
+
+.atlasWrap4 li {
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    overflow: hidden;
+    width: 140px;
+}
+
+.atlasWrap4 li[data_pic='1'] {
+    left: 0;
+}
+
+.atlasWrap4 li[data_pic='2'] {
+    left: 140px;
+}
+
+.atlasWrap4 li[data_pic='3'] {
+    left: 280px;
+}
+
+.atlasWrap4 li[data_pic='4'] {
+    left: 420px;
+}
+
+.wqdIphoneView .atlasWrap4 li {
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    overflow: hidden;
+    width: 80px;
+}
+
+.wqdIphoneView .atlasWrap4 li[data_pic='1'] {
+    left: 0;
+}
+
+.wqdIphoneView .atlasWrap4 li[data_pic='2'] {
+    left: 80px;
+}
+
+.wqdIphoneView .atlasWrap4 li[data_pic='3'] {
+    left: 160px;
+}
+
+.wqdIphoneView .atlasWrap4 li[data_pic='4'] {
+    left: 240px;
+}
+
+.atlasWrap4 .wrap {
+    width: 140px;
+    overflow: hidden;
+    position: relative;
+}
+
+.atlasWrap4 .wrap .txt_box {
+    position: absolute;
+    /*left:0;*/
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    display: none;
+    height: auto;
+    white-space: normal;
+    padding: 0 10px;
+}
+
+.atlasWrap4 .wrap a {
+    width: 140px;
+    height: 100%;
+    background-size: cover;
+    display: block;
+    position: relative;
+}
+
+.atlasWrap4 .wrap a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+}
+
+.atlasWrap4 .wrap a img {
+    display: none;
+}
+
+.atlasWrap4 li[data_pic='1'] a {
+    background: url(http:\/\/img.wqdian.com/group1/M00/19/47/yq0KXVZ9-8iAeeAaAAeEuX6RcmQ938.png) no-repeat center center;
+    background-size: cover;
+}
+
+.atlasWrap4 li[data_pic='2'] a {
+    background: url(http:\/\/img.wqdian.com/group1/M00/19/4A/yq0KXVZ9--CASqK6AALGL6vW_aM829.png) no-repeat center center;
+    background-size: cover;
+}
+
+.atlasWrap4 li[data_pic='3'] a {
+    background: url(http:\/\/img.wqdian.com/group1/M00/19/4B/yq0KXVZ9--mATxrVAAO1UUe7W2Y636.png) no-repeat center center;
+    background-size: cover;
+}
+
+.atlasWrap4 li[data_pic='4'] a {
+    background: url(http:\/\/img.wqdian.com/group1/M00/19/4C/yq0KXVZ9-_CAGohRAAbFyXYpzFU939.png)no-repeat center center;
+    background-size: cover;
+}
+
+.wqdPictureUsual>li .wrap a>div.mask, .wqdPictureFalls>li .wrap a>div.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*图册5样式*/
+
+.atlasWrap5 {
+    width: 100%;
+    height: auto;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.atlasWrap5 .pohotoindex {
+    width: 100%;
+    overflow: hidden
+}
+
+.atlasWrap5 .pohotoshow {
+    padding-bottom: 10px;
+    overflow: hidden
+}
+
+.atlasWrap5 .pohotoshow a {
+    height: 360px;
+}
+
+.wqdIphoneView .atlasWrap5 .pohotoshow a {
+    height: 284px;
+}
+
+.atlasWrap5 .wqd-atlas {
+    font-size: 0;
+    overflow-y: hidden;
+    margin-bottom: -17px;
+    overflow-x: scroll;
+}
+
+.atlasWrap5 .wqd-atlas a {
+    display: block;
+    width: 100px;
+    height: 84px;
+    overflow: hidden;
+    position: relative;
+}
+
+.atlasWrap5 div.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.atlasWrap5 .wrap a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+}
+
+.atlasWrap5 .wqd-atlas a img {
+    display: none;
+}
+
+.atlasWrap5 li[data_pic='1'] a {
+    background: url(http:\/\/img.wqdian.com/group1/M00/44/B2/yq0KXFaDcMiAY80UAASmN8ZstBE535.png) no-repeat center center;
+    background-size: cover;
+}
+
+.atlasWrap5 li[data_pic='2'] a {
+    background: url(http:\/\/img.wqdian.com/group1/M00/45/29/yq0KXVaDb9OAPGFCAAVI-7yYHKY924.png) no-repeat center center;
+    background-size: cover;
+}
+
+.atlasWrap5 li[data_pic='3'] a {
+    background: url(http:\/\/img.wqdian.com/group3/M00/AE/37/yq0KZVaDb5qAblLIAAXT-0EntAo314.png) no-repeat center center;
+    background-size: cover;
+}
+
+.atlasWrap5 li[data_pic='4'] a {
+    background: url(http:\/\/img.wqdian.com/group3/M00/AE/39/yq0KZFaDb6uAehP8AAUUGnOVjhc282.png)no-repeat center center;
+    background-size: cover;
+}
+
+.atlasWrap5 li[data_pic='5'] a {
+    background: url(http:\/\/img.wqdian.com/group3/M00/AE/38/yq0KZVaDb6eAK_erAAN4t9vitqQ847.png)no-repeat center center;
+    background-size: cover;
+}
+
+.atlasWrap5 .pohotoshow a {
+    position: relative;
+    display: block;
+    width: 100%;
+    background: url(http://img.wqdian.com/group1/M00/44/B2/yq0KXFaDcMiAY80UAASmN8ZstBE535.png) center center no-repeat;
+    background-size: cover;
+}
+
+.atlasWrap5 .pohotoshow a img {
+    display: none;
+}
+
+.atlasWrap5 .txt_box {
+    display: none;
+}
+
+.atlasWrap5 .wqd-atlas li {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+#cboxLoadedContent {
+    overflow: hidden!important
+}
+
+.pictureShowL {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    font-size: 80px;
+    color: #fff;
+    position: fixed;
+    top: 50%;
+    margin-top: -50px;
+    cursor: pointer;
+    background: url(../images/v2/design/elementEdit/atlas/x_03.png) no-repeat;
+}
+
+.pictureShowR {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    font-size: 80px;
+    color: #fff;
+    position: fixed;
+    top: 50%;
+    margin-top: -50px;
+    right: 0;
+    cursor: pointer;
+    background: url(../images/v2/design/elementEdit/atlas/x_05.png) no-repeat;
+}
+
+.pictureShowClose {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    ;
+    background: url(../images/v2/design/elementEdit/atlas/x_10.png) no-repeat;
+    font-size: 30px;
+    color: red;
+    cursor: pointer
+}
+
+.pictureShowClose:hover {
+    background: url(../images/v2/design/elementEdit/atlas/x_13.png) no-repeat;
+}
+
+.atlasWrap5 .pohotoshow .wqd-atlas li {
+    padding-right: 0!important;
+}
+
+.wqdIphoneView div.txt_box h5 {
+    margin: 15px 0 15px 0;
+    text-align: center;
+    padding: 0 10%;
+    white-space: normal;
+    word-break: normal;
+    word-wrap: normal;
+}
+
+
+/*.atlasWrap5手机端开始-----*/
+
+.wqdIphoneView .atlasWrap3 .scrollBox {
+    width: 100%;
+    height: 100%;
+}
+
+.wqdIphoneView .atlasWrap3 #scroller {
+    width: 1000000%;
+    height: 100%;
+}
+
+.wqdIphoneView .atlasWrap5 #scroller {
+    width: 10000%;
+    height: 100%;
+}
+
+.wqdIphoneView .wqdPictureFalls .post .wrap:hover a>span, .wqdIphoneView.wqdPictureUsual>li .wrap:hover a>span, .wqdIphoneView .atlasWrap3 li .wrap:hover a>span {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.wqdIphoneView .atlasWrap4 li[data_pic='1'] a {
+    background: url(http:\/\/img.wqdian.com/group1/M00/19/47/yq0KXVZ9-8iAeeAaAAeEuX6RcmQ938.png) no-repeat center center;
+    background-size: cover;
+}
+
+.wqdIphoneView .atlasWrap4 li[data_pic='2'] a {
+    background: url(http:\/\/img.wqdian.com/group1/M00/19/4A/yq0KXVZ9--CASqK6AALGL6vW_aM829.png) no-repeat center center;
+    background-size: cover;
+}
+
+.wqdIphoneView .atlasWrap4 li[data_pic='3'] a {
+    background: url(http:\/\/img.wqdian.com/group1/M00/19/4B/yq0KXVZ9--mATxrVAAO1UUe7W2Y636.png) no-repeat center center;
+    background-size: cover;
+}
+
+.wqdIphoneView .atlasWrap4 li[data_pic='4'] a {
+    background: url(http:\/\/img.wqdian.com/group1/M00/19/4C/yq0KXVZ9-_CAGohRAAbFyXYpzFU939.png)no-repeat center center;
+    background-size: cover;
+}
+
+.wqdIphoneView .atlasWrap5 .wqd-atlas {
+    font-size: 0;
+    overflow-y: hidden;
+    margin-bottom: -17px;
+    overflow-x: scroll;
+    width: auto;
+    margin-right: 0
+}
+
+.wqdIphoneView .atlasWrap5 .pohotoindex {
+    width: 100%;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+}
+
+.wqdIphoneView .atlasWrap5 .pohotoinde .wqd-atlas {
+    transform: translate3d(0, 0, 0);
+}
+
+.wqdIphoneView .atlasWrap5 .pohotoshow a {
+    display: block;
+    width: 100%;
+    background: url(http://img.wqdian.com/group1/M00/44/B2/yq0KXFaDcMiAY80UAASmN8ZstBE535.png) center center no-repeat;
+    background-size: cover;
+}
+
+.wqdIphoneView .atlasWrap5 .pohotoshow a {
+    height: 284px;
+}
+
+.wqdIphoneView .atlasWrap5 li[data_pic='1'] a {
+    background: url(http:\/\/img.wqdian.com/group1/M00/44/B2/yq0KXFaDcMiAY80UAASmN8ZstBE535.png) no-repeat center center;
+    background-size: cover;
+}
+
+.wqdIphoneView .atlasWrap5 li[data_pic='2'] a {
+    background: url(http:\/\/img.wqdian.com/group1/M00/45/29/yq0KXVaDb9OAPGFCAAVI-7yYHKY924.png) no-repeat center center;
+    background-size: cover;
+}
+
+.wqdIphoneView .atlasWrap5 li[data_pic='3'] a {
+    background: url(http:\/\/img.wqdian.com/group3/M00/AE/37/yq0KZVaDb5qAblLIAAXT-0EntAo314.png) no-repeat center center;
+    background-size: cover;
+}
+
+.wqdIphoneView .atlasWrap5 li[data_pic='4'] a {
+    background: url(http:\/\/img.wqdian.com/group3/M00/AE/39/yq0KZFaDb6uAehP8AAUUGnOVjhc282.png)no-repeat center center;
+    background-size: cover;
+}
+
+.wqdIphoneView .atlasWrap5 li[data_pic='5'] a {
+    background: url(http:\/\/img.wqdian.com/group3/M00/AE/38/yq0KZVaDb6eAK_erAAN4t9vitqQ847.png)no-repeat center center;
+    background-size: cover;
+}
+
+.atlasWrap5 li[data_pic='5'] {
+    padding-right: 0;
+}
+
+#cboxClose {
+    opacity: 0
+}
+
+
+/*.atlasWrap5手机端结束-----*/
+
+
+/*图片编辑*/
+
+span.maskPanel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*文章详情 刘明仁*/
+
+.wqdelementEdit.articleDetails, .wqdelementEdit.articleDetails .wqdelementEditBox,
+/*.wqdelementEdit.articleDetails .artDetlImg,*/
+
+.wqdelementEdit.articleDetails .artDetlContent, .wqdelementEdit.articleDetails .dragMar {
+    position: relative;
+}
+
+.artdetlHide {
+    display: none;
+}
+
+.wqdelementEdit.articleDetails {
+    height: auto !important;
+}
+
+.wqdelementEdit.articleDetails .artDetlContent img {
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+.wqd-breadcrumb {
+    padding: 8px 0;
+    margin-bottom: 20px;
+    list-style: none;
+    /*background-color: #f5f5f5;*/
+    border-radius: 4px;
+}
+
+.wqd-breadcrumb>li {
+    display: inline-block;
+}
+
+.wqd-breadcrumb > li + li:before {
+    color: #ccc;
+    content: "> ";
+    padding: 0 5px;
+}
+
+.artDetlTitle h1 {
+    font-size: 32px;
+    line-height: 1;
+}
+
+/*.artDetlContent {
+    position: relative;
+}
+
+.artDetlContent .wqdelementEditBox {
+    position: relative;
+}*/
+
+.wqdelementEdit.artDetlViewcount svg, .wqdelementEdit.artDetlFollow svg {
+    height: 20px;
+    width: 23px;
+    vertical-align: middle;
+}
+
+.wqdelementEdit.artDetlViewcount svg + span, .wqdelementEdit.artDetlFollow svg {
+    vertical-align: middle;
+}
+
+.artDetlSummary p {
+    padding: 14px;
+}
+
+.wqdelementEdit.artDetlShare {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+
+/*.wqdelementEdit.articleDetails .artDetlShare svg path {
+    fill: #5bb4eb;
+}*/
+
+/*动态新闻列表*/
+
+.wqdelementEdit.artListContainer {
+    position: relative;
+}
+
+.artlHide {
+    display: none !important;
+}
+
+.articleLists a {
+    color: #333333;
+}
+
+.articleLists .artListHr div.hr-line {
+    border-color: #dcdcdc;
+    border-top: 1px solid;
+    height: 0;
+    position: relative;
+    top: 50%;
+}
+
+.artlTagUl > .artlTagButton {
+    text-align: center;
+    cursor: pointer;
+}
+
+.artlTagUl > .artlTagButton p {
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+}
+
+.artlTagUl > .artlTagButton:hover, .artlTagUl > .artlTagButton.on {
+    color: #ff8a93;
+}
+
+.artListContainer .articleListTitle .wqdTitleWarp {
+    color: #333;
+}
+
+.artListContainer .articleListTitle h3 {
+    line-height: 1.3;
+    font-weight: inherit;
+    font-size: 24px;
+}
+
+.artListContainer .articleListContent {
+    color: #666;
+    font-size: 14px;
+}
+
+.artListContainer .articleListTime, .artListContainer .artListFollow, .artListContainer .artListViewcount {
+    color: #999;
+}
+
+.artListContainer .articleListTime p {
+    line-height: 1;
+    font-size: 14px;
+}
+
+.artListContainer .artListViewcount svg {
+    float: left;
+    height: 18px;
+    width: 23px;
+}
+
+.artListContainer .artListFollow, .artListContainer .artListViewcount {
+    font-size: 14px;
+}
+
+.artListContainer .artListFollow svg {
+    float: left;
+    height: 19px;
+    width: 22px;
+}
+
+.artListContainer .artListFollow span, .artListContainer .artListViewcount span {
+    float: left;
+}
+
+.artListContainer .artListLinkButton a {
+    vertical-align: top;
+    background: #ff8a93;
+    border-radius: 20px;
+    font-size: 12px;
+    cursor: pointer;
+    font-style: inherit;
+    font-weight: inherit;
+    color: #fff;
+}
+
+.artListContainer .artListLinkButton a:hover {
+    background: #e07981;
+}
+
+.artListContainer .artListLinkButton a em {
+    font-style: inherit;
+}
+
+.artListContainer .artListLinkButton a {
+    border: solid #fff;
+    border-width: 0px;
+}
+
+.artListContainer .articleListLine div.wqd-line {
+    border-top: 1px solid #dcdcdc;
+}
+
+.artListPaging {
+    text-align: center;
+}
+
+.articleLists .artListPaging > li {
+    display: inline-block;
+    width: 1.75em;
+    background: #ebebeb;
+    border-radius: 45px;
+    /*height: 25px;*/
+    line-height: 1.75;
+    margin-right: 7px;
+    color: #898989;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.artListPaging  li.next,.artListPaging li.prev,.artListPaging li.last,.artListPaging li.first {
+    width: 4.28em;
+}
+
+ul.artListPaging > li.on, ul.artListPaging > li:hover {
+    background: #ff8a93;
+    color: #fff;
+}
+
+
+.newArticleList .artListPaging > ul > li {
+    display: inline-block;
+    width: 1.75em;
+    background: #ebebeb;
+    border-radius: 45px;
+    /*height: 25px;*/
+    line-height: 1.75;
+    margin-right: 7px;
+    color: #898989;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    text-align: center;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+.newArticleList .artListPaging > ul > li {
+    background: #fff;
+}
+.newArticleList .artListPaging  li.next,.newArticleList .artListPaging li.prev,.newArticleList .artListPaging li.last,.newArticleList .artListPaging li.first {
+    width: 4.28em;
+}
+
+.newArticleList .artListPaging  > ul > li.on,.newArticleList .artListPaging > ul > li:hover {
+    background: #ff8a93;
+    color: #fff;
+}
+.newArticleList .artListPaging > ul > li.on,.newArticleList .artListPaging > ul > li:hover {
+    background: #6dd2f0;
+    border-color:#6dd2f0;
+}
+
+.wqdelementEdit[data-elementtype='hoverContainer'] {
+    background: rgba(0, 0, 0, 0);
+}
+
+/*.wqdelementEdit[data-elementtype='hoverContainer']>.wqdelementEditBox {*/
+    /*border-width: 1px;*/
+    /*border-style: dashed;*/
+    /*border-color: #1ec1fd;*/
+/*}*/
+
+.hc-fixed {
+    z-index: 998 !important;
+}
+
+.hoverCon-section {}
+
+
+
+.wqdelementEdit.newArticleList {
+    width:auto !important;
+    height:auto !important;
+}
+.wqdelementEdit.newArticleList .wqdelementEditBox {
+    /*width: 100%;*/
+    /*height: 100%;*/
+    overflow: visible;
+    position: relative;
+}
+.artlist {
+    /*width: 100%;*/
+    /*height: 100%;*/
+}
+.artlist > li{
+    /*overflow:hidden;*/
+    /*width:710px;*/
+    /*width:100%;*/
+    /*height:100%;*/
+}
+
+.newArticleList .artListPaging.artlPagingStyle2 li {
+    border:solid 1px #e1e1e1;
+}
+.newArticleList .artListPaging.artlPagingStyle1 {
+    text-align:center;
+}
+.newArticleList .artListPaging.artlPagingStyle1 ul {
+    display: inline-block;
+    border:solid 1px #e1e1e1;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    overflow: hidden;
+}
+.newArticleList .artListPaging.artlPagingStyle1 li {
+    border:none;
+    margin-right: 0;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    border-radius:0;
+    width:2em;
+    line-height:2.1em;
+}
+.newArticleList .artListPaging.artlPagingStyle1 li.next,
+.newArticleList .artListPaging.artlPagingStyle1 li.prev,
+.newArticleList .artListPaging.artlPagingStyle1 li.last,
+.newArticleList .artListPaging.artlPagingStyle1 li.first {
+    width: 2.1em;
+}
+
+.newArticleList .newArticleListDetail {
+    position: relative;
+    width:725px;
+    height:146px;
+    padding:.5%;
+    border-top:1px solid #dcdcdc;
+    border-width:1px;
+    border-color: #dcdcdc;
+}
+.artlist > li:last-child{
+    border-top:solid 1px #dcdcdc;
+    border-bottom:1px solid #dcdcdc;
+}
+.newArticleList .artListPaging {
+    margin-top: 15px;
+    display:none;
+}
+.artdetail{ height:100%;}
+.artdetail > div.right{width:67.9%;}
+.artdetail h3{font-size:22px;color:#000000; font-weight:bold;margin-bottom:7px; height:16.9%;}
+.artdetail h3 a{color:#000000;}
+.artdetail h3 img{ width:26px;height:26px; vertical-align:middle;position:relative; top:-3px; margin-right:5px;}
+.artdetail .left{float:left;display:inline; width:29.7%;height:100%;}
+.artdetail .left img{ width:100%; height:100%; }
+.artdetail .artListImage a {
+    display: inline-block;
+}
+.artdetail .right{float:right;display:inline; width:67.9%;}
+.artdetail .content{color:#666666; font-size:14px;display:table;}
+.artdetail .content .artListSummary {vertical-align:middle;display:table-cell; }
+.artdetail .content2{height:37%; max-height:37%;}
+.artdetail >div:nth-child(5){height:37%; max-height:37%; overflow:hidden;}
+.artdetail .other{overflow:hidden; width:100%; font-size:12px; color:#999999;}
+.artdetail .other.othercontent{width:67.9%;}
+.artdetail .other .on{color:#2dbce6;}
+.artdetail >div:nth-child(6){ height:13%; position:relative;}
+.artdetail >div:nth-child(6) .other{ position:absolute; bottom:0;}
+
+.artdetail .other .tag{float:left;display:inline;}
+.artdetail .other .tag span{margin-left:12px;border-width:1px;border-style:none;}
+.artdetail .other .tag span:nth-child(1){ margin-left:0;}
+.artdetail .other .time{float:left;display:inline; margin-left:12px;}
+.artdetail .other .info{float:right; display:inline; }
+.artdetail .other .info span{ margin-left:12px;}
+.artdetail > div:nth-child(2),.artdetail > div:nth-child(4){margin-bottom:12px;}
+.artdetail .none{display:none;}
+
+
+.artlist.model1 .artdetail >div:nth-child(1){float:right;display:inline;width:67.9%; height:27%;}
+.artlist.model1 .artdetail >div:nth-child(1) h3{overflow:hidden;width:100%; height:100%;text-overflow:ellipsis;white-space:nowrap;}
+.artlist.model1 .artdetail >div:nth-child(2){display:none;}
+.artlist.model1 .artdetail >div:nth-child(5){height:58%; max-height:58%; overflow:hidden;}
+.artlist.model1 .artdetail >div:nth-child(4){display:none;}
+.artlist.model1 .artdetail >div:nth-child(6){margin-top:1%;}
+.artlist.model1 .artdetail >div:last-child{ display:none;}
+
+.artlist.model2 .artdetail >div:nth-child(1){float:none;display:block;width:100%;}
+.artlist.model2 .artdetail >div:nth-child(2){display:none;}
+.artlist.model2 .artdetail >div:nth-child(3){ height:77%;}
+.artlist.model2 .artdetail >div:nth-child(5){ height:64%;max-height:64%;}
+.artlist.model2 .artdetail >div:nth-child(5) .content2{ height:100%;max-height:100%;}
+.artlist.model2 .artdetail >div:nth-child(4){display:none;}
+.artlist.model2 .artdetail >div:nth-child(6){display:block;}
+.artlist.model2 .artdetail >div:last-child{display:none;}
+
+
+.artlist.model3 .artdetail >div:nth-child(1){float:none;display:block;width:100%;}
+.artlist.model3 .artdetail >div:nth-child(2){display:none;}
+.artlist.model3 .artdetail >div:nth-child(3){ height:auto;}
+.artlist.model3 .artdetail >div:nth-child(3) img{ height:auto;}
+.artlist.model3 .artdetail >div:nth-child(4){display:none;}
+.artlist.model3 .artdetail >div:nth-child(6){display:none;}
+.artlist.model3 .artdetail >div:last-child{ display:block;}
+.artlist.model3 .artdetail >div:last-child .other{ padding-top:15px;}
+
+
+.artlist.model4 .artdetail >div:nth-child(1){float:none;display:block;width:100%;}
+.artlist.model4 .artdetail >div:nth-child(2){display:none;}
+.artlist.model4 .artdetail >div:nth-child(3){ height:auto;}
+.artlist.model4 .artdetail >div:nth-child(3) img{ height:auto;}
+.artlist.model4 .artdetail >div:nth-child(4){display:block;}
+.artlist.model4 .artdetail >div:nth-child(5),.artlist.model4 .artdetail >div:nth-child(5) .content2{ height:63.2%;max-height:63.2%;}
+.artlist.model4 .artdetail >div:nth-child(6){display:none;}
+.artlist.model4 .artdetail >div:last-child{ display:none;}
+
+
+.artlist.model5 .artdetail >div:nth-child(1){float:none;display:block;width:100%;}
+.artlist.model5 .artdetail >div:nth-child(2){display:block;}
+.artlist.model5 .artdetail >div:nth-child(3){ height:auto;}
+.artlist.model5 .artdetail >div:nth-child(3) img{ height:auto;}
+.artlist.model5 .artdetail >div:nth-child(4){display:none;}
+.artlist.model5 .artdetail >div:nth-child(5),.artlist.model5 .artdetail >div:nth-child(5) .content2{ height:79%;max-height:79%;}
+.artlist.model5 .artdetail >div:nth-child(6){display:none;}
+.artlist.model5 .artdetail >div:last-child{ display:none;}
+
+
+.artlist.model6 > div{height:177px;}
+.artlist.model6 .artdetail >div:nth-child(1){float:none;display:block;width:100%;}
+.artlist.model6 .artdetail >div:nth-child(2){display:none;}
+.artlist.model6 .artdetail >div:nth-child(3){ height:77%;}
+.artlist.model6 .artdetail >div:nth-child(4){display:block;}
+.artlist.model6 .artdetail >div:nth-child(4) p.tag{display:none;}
+.artlist.model6 .artdetail >div:nth-child(4) p.time{margin-left:0;}
+.artlist.model6 .artdetail >div:nth-child(5),.artlist.model6 .artdetail >div:nth-child(5) .content2{height:50%;max-height:50%;}
+.artlist.model6 .artdetail >div:nth-child(6){display:block; height:14%;}
+.artlist.model6 .artdetail >div:nth-child(6) p.time,.artlist.model6 .artdetail >div:nth-child(6) p.share{ display:none;}
+.artlist.model6 .artdetail >div:last-child{display:none;}
+
+.artlTagStyle1 span {
+    border-radius:15px;
+}
+.artlTagStyle2 span {
+    border-radius:6px;
+}
+.artlTagStyle4 span,
+.artlTagStyle5 span,
+.artlTagStyle6 span {
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.artlTagStyle4 span {
+    background-image: url("../images/v2/design/popup/art_tag1.png");
+    padding-left:6px;
+    padding-right:1px;
+}
+.artlTagStyle5 span {
+    background-image: url("../images/v2/design/popup/art_tag2.png");
+    padding-left: 5px;
+}
+.artlTagStyle6 span {
+    background-image: url("../images/v2/design/popup/art_tag3.png");
+    padding-left:8px;
+    padding-right:1px;
+}

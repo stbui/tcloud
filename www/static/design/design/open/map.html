@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>设计器-微企点建站</title>
+</head>
+<body>
+	<style type="text/css">
+	.tangram-suggestion-main {z-index: 10000;}
+	</style>
+	<div class="map_editor">
+		<div class="editor_title clearfix">
+			<h5 class="name">地图编辑</h5>
+			<a class="close" href="javascript:$.fn.colorbox.close();"><i class="fa fa-times"></i></a>
+		</div>
+		<div class="content_left">
+			<div class="map_box" id="map_box"></div>
+		</div>
+		<div class="content_right">
+			<ul class="message_list">
+				<li class="address">
+					<label>地址：</label>
+					<input id="wqdMapSuggestId" type="text"><span></span>
+				</li>
+				<li class="map_type">
+					<label>地图样式：</label>
+					<div class="map-type-list"><a href="javascript:void(0);" class="map active"><span>地图</span></a><a href="javascript:void(0);" class="satellite"><span>卫星</span></a></div>
+				</li>
+				<li class="select_style">
+					<label>主题</label>
+					<select id="wqdMapStylelist"></select>
+				</li>
+			</ul>
+		</div>
+		<a href="javascript:void(0);" class="ready">确&nbsp;&nbsp;定</a>
+	</div>
+<script src="http://member.wqdian.com/js/v2/app/popupEdit/mapDesign.js"></script>
+</body>
+</html>
+

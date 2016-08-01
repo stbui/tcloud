@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<style>
+	#cboxContent {background: transparent;border-radius: 4px;
+	}
+</style>
+<div class="fabubdbox">
+	<div class="hd wqdWapEditBg">
+		<h1>发布设置</h1>
+		<a class="closePush wqdReleaseBgimg" href="javascript:void(0);"></a>
+		<a class="helpPush wqdReleaseBgimg" href="http://www.431103.com"
+		   target="_blank"></a>
+	</div>
+	<div class="bd" id="sys">
+		<div class="yx-group margBtm5">
+			<label>网站名称：</label>
+			<input class="form-control" type="text" maxlength="12">
+			<div style="visibility: hidden;" class="yx-groupError yxerror1"></div>
+		</div>
+		<div class="nameHint">请输入网站名称</div>
+		<div class="yx-group margBtm10">
+			<label>网站域名：</label>
+			<div class="yx-station margTop6">
+				<span class="yx-input" type="text" title="http://www.431103.com">http://www.431103.com</span>
+				<em class="wqdReleaseBgimg reload"></em>
+			</div>
+		</div>
+		<div class="changeDomin">
+			<a target="_blank" href="http://www.431103.com">修改域名</a>
+		</div>
+		<div class="eam margBtm30">
+			<a href="javascript:;" class="ffb">发 布</a>
+		</div>
+	</div>
+	<div class="bd2">
+		<p class="bd2-h1">您可以通过下方分配地址查看网站：</p>
+		<p class="bd2-text">
+			<a target="_blank">http://www.431103.com</a>
+		</p>
+		<div class="share clearfix">
+			<div class="shareText">分享到：</div>
+			<div class="shareImg"></div>
+			<div class="shareBtn">
+				<a href="javascript:void(0);" class="designshareweibo wqdReleaseBgimg">
+				</a>
+				<a href="javascript:void(0);" class="designshareqq wqdReleaseBgimg">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+
+	$(function(){
+		$(document).trigger("publishInit");
+	})
+
+	// //发布模块
+	// $(".fabubdbox input.form-control").val(yxWebSite.webSiteName);
+	// $(".fabubdbox span.yx-input").text(yxWebSite.webSitedomain).attr("title",yxWebSite.webSitedomain);
+	// $(".fabubdbox .changeDomin a").attr("href", $("#wqdpHeaderD span.logo").parent("a").attr("href") +"/domain/list.html?siteId="+USERSITEID);
+	// $(".fabubdbox .hd .closePush").on("click",function(){$.fn.colorbox.close();});
+	// //刷新域名
+	// $(".fabubdbox .reload").on("click",function(){
+	//     var that = $(this);
+	//     $.ajax({
+	//         type: "GET",
+	//         url: URLPATH+'site/domain',
+	//         data : {'siteId':USERSITEID,'random':Math.random()},
+	//         async: false,
+	//         dataType: "json",
+	//         success:function(data){
+	//             window.yxWebSite.webSitedomain = data.data;    //暂定全局，以后再改
+	//             if(data.status ==200){
+	//                 that.siblings(".yx-input").text(data.data).attr("title",data.data);
+	//             }else{
+	//                 alert(data.msg);
+	//             }
+	//         },
+	//         error : function(data){
+	//             // callback(data,that);
+	//         }
+	//     });
+
+	// });
+	// //分享
+	// $('a.designshareweibo, a.designshareqq').on('click',function(){
+	//     var indexObj = {"0":1,"1":3};
+	//     switch(indexObj[$(this).index()]) {
+	// 		case 1:
+	// 			$('a.bds_tsina')[0].click();
+	// 			break;
+	// 		case 2:
+	// 			$('a.bds_weixin')[0].click();
+	// 			break;
+	// 		case 3:
+	// 			$('a.bds_sqq')[0].click();
+	// 			break;
+	// 	}
+	// });
+	// //发布
+	// $(".fabubdbox .margBtm30 .ffb").on("click",function(){
+	//     var sitename = $(".fabubdbox input.form-control").val();
+	//     if(sitename == "") $("#sys .nameHint").html("网站名称不能为空！").css({"visibility":"visible"});
+	//     else $("#sys .nameHint").css({"visibility":"hidden"});
+	//     if(!sitename) return;
+
+	//     $(document).trigger('appSave');
+	//     // application.siteStatus.issue(sitename,pageEdit.replease.succeed);
+	//     $.ajax({
+	// 		type: "POST",
+	// 		url: URLPATH+'common/site/publish',
+	// 		data : {'siteId':USERSITEID,'name':sitename},
+	// 		async: true,
+	// 		dataType: "json",
+	// 		success:function(issueData){
+	// 			if(issueData.status==200){
+	// 				window.yxWebSite.webSiteName = sitename;	//暂定全局，以后再改
+	// 				window.yxWebSite.WebRelease = true;
+	// 				$('.tool-list li').eq(0).removeClass('on');
+
+	// 				var domain = yxWebSite.webSitedomain;
+	// 				$('.fabubdbox .bd').hide();
+	// 	            $('.fabubdbox .hd h1').text("发布成功");
+	// 	            $('.fabubdbox .bd2-text a').attr('href',domain).html(domain);
+	// 	            $(".fabubdbox .bd2 .shareImg").empty().qrcode({
+	// 	                render: "canvas", //table方式
+	// 	                width: 110, //宽度
+	// 	                height:110, //高度
+	// 	                text: domain //任意内容
+	// 	            });
+	// 	            $('.fabubdbox .bd2').show();
+	// 			}
+	// 		},
+	// 		error : function(data){
+	// 			// callback(data,that);
+	// 		}
+	// 	});
+	// });
+
+</script>
+</body>
+</html>
+

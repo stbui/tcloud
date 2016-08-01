@@ -1,0 +1,37 @@
+define(function() {
+    return {
+        "default":[{
+            "model":"<div class='wqdelementEdit' data-elementtype='button' data-elemandgroup='true'> <div class='wqdelementEditBox'> <a class='wqd-button wqdComponentBtn1' wqdBtnBorder='false' ondragstart='return false;'> <em> 了解详情 </em> </a> </div> </div>",
+            "view":"<a class='wqd-button temp-view-button-1' ondragstart='return false;'> <em> 了解详情 </em> </a>"
+        },{
+            "model":"<div class='wqdelementEdit' data-elementtype='button' data-elemandgroup='true'> <div class='wqdelementEditBox'> <a class='wqd-button wqdComponentBtn2' wqdBtnBorder='false' ondragstart='return false;'> <em> 了解详情 </em> </a> </div> </div>",
+            "view":"<a class='wqd-button temp-view-button-2' ondragstart='return false;'> <em> 了解详情 </em> </a>",
+        },{
+            "model":"<div class='wqdelementEdit' data-elementtype='button' data-elemandgroup='true'> <div class='wqdelementEditBox'> <a class='wqd-button wqdComponentBtn3' wqdBtnBorder='true' ondragstart='return false;'> <div class='componentTR50 hoverTrue'> </div> <div class='componentBR50 hoverTrue'> </div> <div class='componentCenter'> </div> <em> Go Shoping </em> </a> </div> </div>",
+            "view":"<a class='wqd-button temp-view-button-3' ondragstart='return false;'> <div style='position:absolute;right:0;bottom:50% !important;border-left:0;border-right:100px solid transparent !important;border-bottom:100px solid #e6b871;'> </div> <div style='position:absolute;right:0;top:50% !important;border-left:0;border-right:100px solid transparent !important;border-top:100px solid #e6b871;'> </div> <div style='position:absolute;top:0;bottom:0;left:0;right:100px;background:#e6b871;'> </div> <em> Go Shoping </em> </a>",
+        },{
+            "model":"<div class='wqdelementEdit' data-elementtype='button' data-elemandgroup='true'> <div class='wqdelementEditBox'> <a class='wqd-button wqdComponentBtn4' wqdBtnBorder='true' ondragstart='return false;'> <div class='componentTL50 hoverTrue'> </div> <div class='componentBL50 hoverTrue'> </div> <div class='componentCenter'> </div> <em> 点击查看 </em> </a> </div> </div>",
+            "view":"<a class='wqd-button temp-view-button-4' ondragstart='return false;'> <div style='position:absolute;left:0;bottom:50% !important;border-left:100px solid transparent !important;border-right:0;border-bottom:100px solid #2b6ca3;'> </div> <div style='position:absolute;left:0;top:50% !important;border-left:100px solid transparent !important;border-right:0;border-top:100px solid #2b6ca3;'> </div> <div style='position:absolute;top:0;bottom:0;left:100px;right:0;background:#2b6ca3;'> </div> <em> 点击查看 </em> </a>",
+        },{
+            "model":"<div class='wqdelementEdit' data-elementtype='button' data-elemandgroup='true'> <div class='wqdelementEditBox'> <a class='wqd-button wqdComponentBtn5' wqdBtnBorder='false' ondragstart='return false;'> <em> 点击查看 </em> </a> </div> </div>",
+            "view":"<a class='wqd-button temp-view-button-5' ondragstart='return false;'> <em> 点击查看 </em> </a>",
+        },{
+            "model":"<div class='wqdelementEdit' data-elementtype='button' data-elemandgroup='true'> <div class='wqdelementEditBox'> <a class='wqd-button wqdComponentBtn6' wqdBtnBorder='false' ondragstart='return false;'> <em> 查看 </em> </a> </div> </div>",
+            "view":"<a class='wqd-button temp-view-button-6' ondragstart='return false;'> <em> 查看 </em> </a>",
+        },{
+            "model":"<div class='wqdelementEdit' data-elementtype='button' data-elemandgroup='true'> <div class='wqdelementEditBox'> <a class='wqd-button wqdComponentBtn7' wqdBtnBorder='true' ondragstart='return false;'> <div class='componentTL50 hoverTrue'> </div> <div class='componentBL50 hoverTrue'> </div> <div class='componentCenter'> </div> <div class='componentTR50 hoverTrue'> </div> <div class='componentBR50 hoverTrue'> </div> <em> 点击查看 </em> </a> </div> </div>",
+            "view":"<a class='wqd-button temp-view-button-7' ondragstart='return false;'> <div style='position:absolute;left:0;bottom:50% !important;border-left:58px solid transparent !important;border-right:0;border-bottom:100px solid #3dc288;'> </div> <div style='position:absolute;left:0;top:50% !important;border-left:58px solid transparent !important;border-right:0;border-top:100px solid #3dc288;'> </div> <div style='position:absolute;top:0;bottom:0;left:58px;right:58px;background:#3dc288;'> </div> <div style='position:absolute;right:0;bottom:50% !important;border-left:0;border-right:58px solid transparent !important;border-bottom:100px solid #3dc288;'> </div> <div style='position:absolute;right:0;top:50% !important;border-left:0;border-right:58px solid transparent !important;border-top:100px solid #3dc288;'> </div> <em> 点击查看 </em> </a>",
+        },{
+            "model":"<div class='wqdelementEdit' data-elementtype='button' data-elemandgroup='true'> <div class='wqdelementEditBox'> <a class='wqd-button wqdComponentBtn8' wqdBtnBorder='false' ondragstart='return false;'> <em> 了解详情 </em> </a> </div> </div>",
+            "view":"<a class='wqd-button temp-view-button-8' ondragstart='return false;'> <em> 了解详情 </em> </a>",
+        },{
+            "model":"<div class='wqdelementEdit' data-elementtype='button' data-elemandgroup='true'> <div class='wqdelementEditBox'> <a class='wqd-button wqdComponentBtn9' wqdBtnBorder='true' ondragstart='return false;'> <div class='componentBR0 hoverTrue'> </div> <div class='componentTR0 hoverTrue'> </div> <div class='componentCenter'> </div> <em> 详情 </em> </a> </div> </div>",
+            "view":"<a class='wqd-button temp-view-button-9' ondragstart='return false;'> <div style='position:absolute;right:0;bottom:0 !important;border-left:0;border-right:100px solid transparent !important;border-bottom:100px solid #3d9be9;'> </div> <div style='position:absolute;right:0;top:0 !important;border-left:0;border-right:100px solid transparent !important;border-top:100px solid #3d9be9;'> </div> <div style='position:absolute;top:0;bottom:0;left:0;right:100px;background:#3d9be9;'> </div> <em> 详情 </em> </a>",
+        },{
+            "model":"<div class='wqdelementEdit' data-elementtype='button' data-elemandgroup='true'> <div class='wqdelementEditBox'> <a class='wqd-button wqdComponentBtn10' wqdBtnBorder='true' ondragstart='return false;'> <div class='componentBL0 hoverTrue'> </div> <div class='componentTL0 hoverTrue'> </div> <div class='componentCenter'> </div> <div class='componentBR0 hoverTrue'> </div> <div class='componentTR0 hoverTrue'> </div> <em> 点击查看 </em> </a> </div> </div>",
+            "view":"<a class='wqd-button temp-view-button-10' ondragstart='return false;'> <div style='position:absolute;left:0;bottom:0 !important;border-left:58px solid transparent !important;border-right:0;border-bottom:100px solid #01b1af;'> </div> <div style='position:absolute;left:0;top:0 !important;border-left:58px solid transparent !important;border-right:0;border-top:100px solid #01b1af;'> </div> <div style='position:absolute;top:0;bottom:0;left:58px;right:58px;background:#01b1af;'> </div> <div style='position:absolute;right:0;bottom:0 !important;border-left:0;border-right:58px solid transparent !important;border-bottom:100px solid #01b1af;'> </div> <div style='position:absolute;right:0;top:0 !important;border-left:0;border-right:58px solid transparent !important;border-top:100px solid #01b1af;'> </div> <em> 点击查看 </em> </a>",
+        }]
+    }
+});
+
+
