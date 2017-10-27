@@ -1,22 +1,4 @@
+模板设计器
 
-Application created by [ThinkJS](http://www.thinkjs.org)
 
-## Install dependencies
-
-```
-npm install
-```
-
-## Start server
-
-```
-npm start
-```
-
-## Deploy with pm2
-
-Use pm2 to deploy app on production enviroment.
-
-```
-pm2 startOrReload pm2.json
-```
+http://127.0.0.1:8360/static/design/design/pc.html
