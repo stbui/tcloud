@@ -1,11 +1,27 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Post, Body, Param } from '@nestjs/common';
+import { PageService } from './page.service';
+import { PageInterface } from './page.interface';
 
 @Controller('page')
 export class PageController {
 
+    constructor(private readonly service: PageService) {
+
+    }
+
     @Get()
-    query() {
-        return {status: 200, message: null, data: null};
+    async query(): Promise<PageInterface[]> {
+        return this.service.findAll();
+    }
+
+    @Get('/:name')
+    async find(@Param('name') param) {
+        return this.service.find({"name":param});
+    }
+
+    @Post()
+    async create(@Body() body) {
+        this.service.create({"name":"2"});
     }
 
     @Get('all')
