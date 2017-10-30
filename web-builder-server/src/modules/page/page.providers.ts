@@ -4,7 +4,7 @@ import { PageSchema } from './page.schema';
 export const PageProviders = [
     {
         provide: 'PageModelToken',
-        useFactory: (connection: Connection) => connection.model('template', PageSchema),
+        useFactory: (connection: Connection) => connection.model('page', PageSchema),
         inject: ['DbConnectionToken']
     }
 ];
