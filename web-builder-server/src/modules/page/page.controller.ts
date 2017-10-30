@@ -1,6 +1,7 @@
 import { Controller, Get, Post, Body, Param } from '@nestjs/common';
 import { PageService } from './page.service';
 import { PageInterface } from './page.interface';
+import { PageModel } from './page.model';
 
 @Controller('page')
 export class PageController {
@@ -16,12 +17,12 @@ export class PageController {
 
     @Get('/:name')
     async find(@Param('name') param) {
-        return this.service.find({"name":param});
+        return this.service.find({"name": param});
     }
 
     @Post()
-    async create(@Body() body) {
-        this.service.create({"name":"2"});
+    async create(@Body() body: PageModel) {
+        return this.service.create(body);
     }
 
     @Get('all')

@@ -4,12 +4,11 @@ import { Controller, Get, Post, Req, Body, Res, HttpStatus } from '@nestjs/commo
 export class AppController {
     @Post()
     index(@Body() b) {
-        console.log(b);
-        return [1, 2, 3, 4];
+        return {status: 200, message: null, data: null};
     }
 
     @Get()
     query() {
-        return [1, 2, 3, 4];
+        return {status: 200, message: null, data: null};
     }
 }

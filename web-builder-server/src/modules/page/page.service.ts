@@ -1,6 +1,7 @@
-import { Model } from 'mongoose';
 import { Component, Inject } from '@nestjs/common';
+import { Model } from 'mongoose';
 import { PageInterface } from './page.interface';
+import { PageModel } from './page.model';
 
 @Component()
 export class PageService {
@@ -16,7 +17,7 @@ export class PageService {
         return await this.pageModel.find().exec();
     }
 
-    async create(where):Promise<PageInterface> {
+    async create(where: PageModel): Promise<PageInterface> {
         const model = new this.pageModel(where);
         return await model.save();
     }
