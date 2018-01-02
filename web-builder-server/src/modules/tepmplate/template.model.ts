@@ -1,4 +1,5 @@
 export class TemplateModel {
+    id: Number;
     name: String;
     descn: String;
     author: String;
@@ -21,6 +22,7 @@ export class TemplateModel {
     online: Boolean;
 
     constructor(obj) {
+        this.id = obj.id;
         this.name = obj.name;
         this.descn = obj.descn;
         this.author = obj.author;

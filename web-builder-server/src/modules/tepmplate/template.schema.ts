@@ -2,6 +2,7 @@ import * as mongoose from 'mongoose';
 import { Stream } from 'stream';
 
 export const TemplateSchema = new mongoose.Schema({
+    id: Number,
     name: String,
     descn: String,
     author: String,

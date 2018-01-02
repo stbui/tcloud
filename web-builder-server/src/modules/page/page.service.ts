@@ -17,8 +17,8 @@ export class PageService {
         return await this.pageModel.find().exec();
     }
 
-    async create(where: PageModel): Promise<PageInterface> {
+    create(where: PageModel): Promise<PageInterface> {
         const model = new this.pageModel(where);
-        return await model.save();
+        return model.save();
     }
 }

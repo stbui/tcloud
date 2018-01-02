@@ -14,8 +14,10 @@ export class ApplicationModule implements NestModule {
         consumer.apply(CorsMiddleware).with('ApplicationModule').forRoutes(
             { path: '/site/read', method: RequestMethod.GET },
             { path: '/site/info', method: RequestMethod.GET },
+            { path: '/page/:id', method: RequestMethod.ALL },
             { path: '/page/all', method: RequestMethod.GET },
-            { path: '/page', method: RequestMethod.GET }
+            { path: '/page', method: RequestMethod.GET },
+            { path: '/page/*', method: RequestMethod.ALL },
         );
     }
 }

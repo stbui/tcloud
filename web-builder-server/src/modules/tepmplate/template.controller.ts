@@ -33,10 +33,10 @@ export class TemplateController {
     }
 
     install() {
-        const db = TemplateDb.list;
+        const db = TemplateDb.pages;
         db.forEach((v, k) => {
             let model = new TemplateModel(v);
-            // this.service.create(model);
+            this.service.create(model);
         });
 
         return db;
@@ -44,11 +44,33 @@ export class TemplateController {
 
     @Post()
     create( @Body() body: TemplateModel) {
-        this.service.create(body);
+        // this.service.create(body);
+        return this.install();
     }
 
     findAll() {
         return this.service.findAll();
+    }
+
+    @Post('/search')
+    search(@Body() body) {
+        return this.find(body);
+    }
+
+    find(where) {
+        return this.service.find(where);
+    }
+
+    @Get('/header')
+    header() {
+        const where = {type: 'headerPC'};
+        return this.find(where);
+    }
+
+    @Get('/footer')
+    footer() {
+        const where = {type: 'footerPC'};
+        return this.find(where);
     }
 
 }
