@@ -11,7 +11,8 @@ import { SiteProviders } from './site.providers';
     components: [
         SiteService,
         ...SiteProviders
-    ]
+    ],
+    exports: [SiteService]
 })
 export class SiteModule {
 }

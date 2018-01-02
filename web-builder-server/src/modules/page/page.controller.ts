@@ -1,142 +1,67 @@
-import { Controller, Get, Post, Body, Param } from '@nestjs/common';
+import { Controller, Get, Post, Body, Param, Query } from '@nestjs/common';
 import { PageService } from './page.service';
 import { PageInterface } from './page.interface';
 import { PageModel } from './page.model';
 
+import { SiteService } from '../site/site.service';
+import { TemplateService } from '../tepmplate/template.service';
+import { PageDb } from './page.db';
+
 @Controller('page')
 export class PageController {
 
-    constructor(private readonly service: PageService) {
+    constructor(private readonly service: PageService, private siteService: SiteService, private templateService: TemplateService) {
 
     }
+
+    async queryTemplateList() {
+        const result = await this.templateService.findAll();
+        return {
+            "totalCount": 13,
+            "pageNo": 1,
+            "pageSize": 12,
+            "url": "",
+            "parames": "",
+            "startRows": 0,
+            "endRows": 12,
+            "totalPages": 2,
+            "hasPre": false,
+            "prePage": 1,
+            "hasNext": true,
+            "nextPage": 2,
+            "data": result
+        };
+    }
+
 
     @Get()
-    async query(): Promise<PageInterface[]> {
-        return this.service.findAll();
+    query( @Query() q) {
+
+        if (q.cateid) {
+            return this.queryTemplateList();
+        }
+
+
+        return PageDb.pages;
     }
 
-    @Get('/:name')
-    async find(@Param('name') param) {
-        return this.service.find({"name": param});
-    }
+    // @Get()
+    // async query(): Promise<PageInterface[]> {
+    //     return await this.service.findAll();
+    // }
+
+    // @Get(':name')
+    // async find(@Param() param): Promise<PageInterface[]> {
+    //     return await this.service.find({"name": param.name});
+    // }
 
     @Post()
-    async create(@Body() body: PageModel) {
+    create( @Body() body: PageModel) {
         return this.service.create(body);
     }
 
     @Get('all')
-    async all() {
-        return [
-            {
-                "id": 228990,
-                "deleteStatus": "Normal",
-                "seoTitle": "网站模板",
-                "seoDescn": "",
-                "siteId": 69792,
-                "userId": 167569,
-                "name": "首页",
-                "seoKeyword": "",
-                "domain": "?userId=228990",
-                "pv": 0,
-                "pageType": "normal",
-                "sortId": 0,
-                "renderId": "",
-                "associateId": "",
-                "viewWidth": 1200,
-                "synchro": false
-            },
-            {
-                "id": 228991,
-                "deleteStatus": "Normal",
-                "seoTitle": "",
-                "seoDescn": "",
-                "siteId": 69792,
-                "userId": 167569,
-                "name": "大赛介绍",
-                "seoKeyword": "",
-                "domain": "?userId=228991",
-                "pv": 0,
-                "pageType": "normal",
-                "sortId": 1,
-                "renderId": "",
-                "associateId": "fd3eb775e7d84a70b9455ec68e2f329b",
-                "viewWidth": 1200,
-                "synchro": false
-            },
-            {
-                "id": 228992,
-                "deleteStatus": "Normal",
-                "seoTitle": "",
-                "seoDescn": "",
-                "siteId": 69792,
-                "userId": 167569,
-                "name": "大赛排行榜",
-                "seoKeyword": "",
-                "domain": "?userId=228992",
-                "pv": 0,
-                "pageType": "normal",
-                "sortId": 2,
-                "renderId": "",
-                "associateId": "fd3eb775e7d84a70b9455ec68e2f329b",
-                "viewWidth": 1200,
-                "synchro": false
-            },
-            {
-                "id": 228993,
-                "deleteStatus": "Normal",
-                "seoTitle": "",
-                "seoDescn": "",
-                "siteId": 69792,
-                "userId": 167569,
-                "name": "数据掘金",
-                "seoKeyword": "",
-                "domain": "?userId=228993",
-                "pv": 0,
-                "pageType": "normal",
-                "sortId": 3,
-                "renderId": "",
-                "associateId": "fd3eb775e7d84a70b9455ec68e2f329b",
-                "viewWidth": 1200,
-                "synchro": false
-            },
-            {
-                "id": 228994,
-                "deleteStatus": "Normal",
-                "seoTitle": "",
-                "seoDescn": "",
-                "siteId": 69792,
-                "userId": 167569,
-                "name": "大赛动态",
-                "seoKeyword": "",
-                "domain": "?userId=228994",
-                "pv": 0,
-                "pageType": "normal",
-                "sortId": 4,
-                "renderId": "",
-                "associateId": "fd3eb775e7d84a70b9455ec68e2f329b",
-                "viewWidth": 1200,
-                "synchro": false
-            },
-            {
-                "id": 241381,
-                "deleteStatus": "Normal",
-                "seoTitle": "",
-                "seoDescn": "",
-                "siteId": 69792,
-                "userId": 167569,
-                "name": "我的账户",
-                "seoKeyword": "",
-                "domain": "?userId=241381",
-                "pv": 0,
-                "data": "",
-                "pageType": "normal",
-                "sortId": 5,
-                "renderId": "",
-                "associateId": "07d5edb9c36f422f8d19900c50f57962",
-                "viewWidth": 1200,
-                "synchro": false
-            }
-        ];
+    all() {
+        return PageDb.all;
     }
 }
