@@ -5,8 +5,11 @@ import { TemplateModel } from './template.model';
 
 @Component()
 export class TemplateService {
-    constructor( @Inject('TemplateModelToken') private readonly templateModel: Model<TemplateInterface>) {
 
+    options;
+
+    constructor( @Inject('TemplateModelToken') private readonly templateModel: Model<TemplateInterface>) {
+        this.options = {};
     }
 
     async create(where: TemplateModel): Promise<TemplateInterface> {
@@ -14,9 +17,9 @@ export class TemplateService {
         return await model.save();
     }
 
-    find(where) {
-        return this.templateModel.find(where);
-    }
+    // find(where) {
+    //     return this.templateModel.find(where);
+    // }
 
     findAll(): Promise<TemplateInterface[]> {
         return this.templateModel.find().exec();
@@ -30,23 +33,11 @@ export class TemplateService {
 
     }
 
-    where(query: object) {
-
-    }
-
-    limit(offset:number, length:number) {
+    limit(offset: number, length: number) {
 
     }
 
     page(page: number, pageSize: number) {
-
-    }
-
-    field() {
-
-    }
-
-    order() {
 
     }
 
@@ -59,6 +50,48 @@ export class TemplateService {
     }
 
     thenUpdate() {
-        
+
+    }
+
+    field(options) {
+        this.options.field = options;
+        return this;
+    }
+
+    order(options) {
+        this.options.order = options;
+        return this;
+    }
+
+    where(options) {
+        this.options.where = options;
+        return this;
+    }
+
+
+    find(options?) {
+        if (this.options.where) options = this.options.where;
+
+        return this.templateModel.findOne(options);
+    }
+
+    select(options?) {
+        const model = this.templateModel;
+        let result = model.find();
+
+        if (this.options.field) {
+            result = model.find({}, this.options.field);
+        }
+
+        if (this.options.where) {
+            console.log(this.options.where)
+            return result.find(this.options.where);
+        }
+
+        if (this.options.order) {
+            return result.sort(this.options.order);
+        }
+
+        return result;
     }
 }

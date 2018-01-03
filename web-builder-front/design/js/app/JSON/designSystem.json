@@ -1,0 +1,7 @@
+﻿{
+	"system":
+	{
+		"removePage":"<div class='wqdsysremovePage'><div class='hd'><h1>删除提示</h1><em class='wqdsyshelp'></em><em class='wqdsysclose'></em></div><div class='bd'>您正在删除<em></em>页面，删除后将无法恢复，是否继续？<p><span class='q'>取消</span><span class='r'>删除</span></p></div></div>"
+	}
+	
+} 

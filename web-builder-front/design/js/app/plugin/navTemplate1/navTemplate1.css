@@ -1,0 +1,12 @@
+/*示例导航1*/
+.wqdNavTemplate.wqdNavAuto{width: auto!important;height: auto!important;}
+.wqdNavTemplate.wqdNavAuto .wqdelementEditBox{position: relative!important;}
+.navTemplateWrap1 {position: relative;display: inline-block;vertical-align: top;background-color: #2dbce6;overflow: hidden;}
+.navTemplateWrap1 a{color: #fff;}
+.navTemplateWrap1 .navTop_list{position: relative;z-index: 1;font-size: 0;white-space: nowrap;}
+.navTemplateWrap1 .navTop_list li{display: inline-block;font-size: 16px;}
+.navTemplateWrap1 .navTop_list li a{display: inline-block;padding: 13px 24px;}
+.navTemplateWrap1 .navTop_list li:hover a,
+.navTemplateWrap1 .navTop_list li.active a{color: #fff!important;}
+
+.template1_mask{position: absolute;z-index: 0;left:0;top: 0;width: 60px;height: 100%;background-color: #186379;}

@@ -1,0 +1,52 @@
+{
+    "json": [
+        {
+            "model": "<form class=\"wqd-form wqdControlForm elemContBox\"><\/form>", 
+            "html": "<div class=\"mimeForm fatherContainer formFather\" data-width=\"400\" data-height=\"400\">表单容器<\/div>",
+            "className": "",
+            "type":"form"
+        },
+        {
+            "model": "<div class=\"wqd-form-element formInput wqdControlFormEl1\"><input readonly=\"readonly\" placeholder=\"单行文本框\" type=\"text\" name=\"name\" autocomplete=\"off\"\/><\/div>", 
+            "html": "<div class=\"mimeInput formChild\">单行文本框<\/div>",
+            "className": "",
+            "type":"formInput"
+        },
+        {
+            "model": "<div class=\"wqd-form-element formTextarea wqdControlFormEl2\"><textarea readonly=\"readonly\" placeholder=\"多行文本框\" autocomplete=\"off\" \/><\/textarea><\/div>", 
+            "html": "<div class=\"mimeTextarea formChild\">多行文本框<span><\/span><\/div>",
+            "className": "",
+            "type":"formTextarea"
+        },
+        {
+            "model": "<div class=\"wqd-form-element formRadio wqdControlFormEl3\"><i class=\"on\"><\/i><input type=\"radio\" checked=\"checked\" \/><label>单选框<\/label><\/div>", 
+            "html": "<div class=\"mimeRadio formChild\"><span><\/span>单选框<\/div>",
+            "className": "",
+            "type":"formRadio"
+        },
+        {
+            "model": "<div class=\"wqd-form-element formCheckbox wqdControlFormEl4\"><i class=\"on\"><\/i><input type=\"checkbox\" checked=\"checked\" \/><label>复选框<\/label><\/div>", 
+            "html": "<div class=\"mimeCheckbox formChild\"><span><\/span>复选框<\/div>",
+            "className": "",
+            "type":"formCheckbox"
+        },
+        {
+            "model": "<div class=\"wqd-form-element formSelect wqdControlFormEl5\"><p class=\"\"><span>选择项1<\/span><i class=\"\"><\/i><\/p><ul><li class=\"on\"><span>选择项1<\/span><\/li><\/ul><\/div>", 
+            "html": "<div class=\"mimeSelect formChild\">下拉框<span><\/span><\/div>",
+            "className": "",
+            "type":"formSelect"
+        },
+        {
+            "model": "<div class=\"wqd-form-element formDate wqdControlFormEl6\"><input placeholder=\"日期选择\" type=\"text\" name=\"name\" autocomplete=\"off\"\/><span></span><\/div>", 
+            "html": "<div class=\"mimeDatePicker formChild\">日期选择<span><\/span><\/div>",
+            "className": "",
+            "type":"formDate"
+        },
+        {
+            "model": "<div class=\"wqd-form-element formButton wqdControlFormEl7\"><a class=\"wqd-button\"><em>提交<\/em><\/a><\/div>", 
+            "html": "<div class=\"mimeButton formChild\">提交<\/div>",
+            "className": "",
+            "type":"formButton"
+        }
+    ]
+}

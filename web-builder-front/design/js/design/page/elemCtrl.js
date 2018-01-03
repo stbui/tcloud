@@ -82,14 +82,14 @@ define(function() {
     elemCtrl.getIndexUrl = function(index) {
         var strUrl = "";
         switch(index) {
-            case 0: strUrl = "http://bbs.wqdian.com/thread-46-1-1.html"; break;
-            case 1: strUrl = "http://bbs.wqdian.com/thread-46-1-1.html"; break;
-            case 2: strUrl = "http://bbs.wqdian.com/thread-46-1-1.html"; break;
-            case 3: strUrl = "http://bbs.wqdian.com/thread-46-1-1.html"; break;
-            case 4: strUrl = "http://bbs.wqdian.com/thread-46-1-1.html"; break;
-            case 5: strUrl = "http://bbs.wqdian.com/thread-46-1-1.html"; break;
-            case 6: strUrl = "http://bbs.wqdian.com/thread-46-1-1.html"; break;
-            case 7: strUrl = "http://bbs.wqdian.com/thread-46-1-1.html"; break;
+            case 0: strUrl = "http://127.0.0.1"; break;
+            case 1: strUrl = "http://127.0.0.1"; break;
+            case 2: strUrl = "http://127.0.0.1"; break;
+            case 3: strUrl = "http://127.0.0.1"; break;
+            case 4: strUrl = "http://127.0.0.1"; break;
+            case 5: strUrl = "http://127.0.0.1"; break;
+            case 6: strUrl = "http://127.0.0.1"; break;
+            case 7: strUrl = "http://127.0.0.1"; break;
         }
         return strUrl;
     }

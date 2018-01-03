@@ -1,7 +1,7 @@
 import { Document } from 'mongoose';
 
 export interface TemplateInterface extends Document {
-    readonly id: Number;
+    // readonly id: Number;
     readonly name: String;
     readonly descn: String;
     readonly author: String;

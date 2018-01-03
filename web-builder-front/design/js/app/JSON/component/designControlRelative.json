@@ -1,0 +1,40 @@
+{
+    "json": [
+        {
+            "model": 
+            [
+                "<div class=\"containerWarp elemContBox\"><\/div>",
+                "<div class=\"containerWarp elemContBox\"><\/div>"
+            ], 
+            "html": "<div style=\"width:242px;height:112px;background:#fff;border:1px dashed #1ec1fd;font-size:12px;color:#999;line-height:110px;text-align:center;\">模式一<\/div><div style=\"position:absolute;top: 0;left:0;z-index:0;width:240px;height:110px;\"><\/div>",
+            "className": 
+            [
+                "groupContainerTwo",
+                "groupContainerOne"
+            ],
+            "type":
+            [
+                "groupContainer",
+                "groupContainer"
+            ]
+        },
+        {
+            "model": 
+            [
+                "<div class=\"containerWarp elemContBox\"><\/div>",
+                "<div class=\"containerWarp elemContBox\"><\/div>"
+            ], 
+            "html": "<div style=\"width:240px;height:40px;background:#fff;border:1px dashed #1ec1fd;font-size:12px;color:#999;line-height:38px;text-align:center;\">模式二<\/div><div style=\"width:240px;height:110px;background:#fff;border:1px dashed #1ec1fd;\"><\/div>",
+            "className": 
+            [
+                "freeContainerOne",
+                "freeContainerTwo"
+            ],
+            "type":
+            [
+                "groupContainer",
+                "groupContainer"
+            ]
+        }
+    ]
+}

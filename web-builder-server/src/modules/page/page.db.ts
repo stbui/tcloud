@@ -1,4 +1,6 @@
 export class PageDb {
+
+    
     public static all = [
         {
             "id": 228990,
@@ -17,6 +19,7 @@ export class PageDb {
             "associateId": "",
             "viewWidth": 1200,
             "synchro": false
+            
         },
         {
             "id": 228991,

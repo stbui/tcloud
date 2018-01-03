@@ -36,7 +36,7 @@ define(["pageList", "pageSet", "pageSetCtrl", "pageRuler", "pageHeader", 'pageCa
 
 					$.ajax({
 						type: 'GET',
-						url: URLPATH + 'js/app/JSON/designSystem.json',
+						url: '/design/js/app/JSON/designSystem.json',
 						data: {},
 						async: false,
 						dataType: "json",

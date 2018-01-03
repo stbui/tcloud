@@ -1,0 +1,41 @@
+.wqdNavTemplate.wqdNavAuto{width: auto!important;height: auto!important;}
+.wqdNavTemplate.wqdNavAuto .wqdelementEditBox{position: relative!important;}
+/*示例导航2*/
+.navTemplateWrap2 {display: inline-block;vertical-align: top;overflow: hidden;}
+.navTemplateWrap2 a{color: #fff;}
+.navTemplateWrap2 .navTop_list{font-size: 0;white-space: nowrap;}
+.navTemplateWrap2 .navTop_list li{position:relative;display: inline-block;font-size: 16px;}
+.navTemplateWrap2 .navTop_list li a{display: inline-block;padding: 15px 30px;border-bottom:4px solid;-webkit-transition-property: top,-webkit-transform;-moz-transition-property: top,-moz-transform;transition-property: top,transform;-webkit-transition-duration: 0.5s;-moz-transition-duration: 0.5s;transition-duration: 0.5s;}
+.navTemplateWrap2 .navTop_list li a.a_bottom{background-color: rgb(0,175,255);border-color: rgb(0,157,202);}
+.navTemplateWrap2 .navTop_list li a.a_top{position: absolute;width: 100%;top:-100%;height: 100%; background-color: rgb(250,189,0);border-color: rgb(243,147,34);}
+.navTemplateWrap2 .navTop_list li.active .a_top, .navTemplateWrap2 .navTop_list li:hover .a_top{top:0;}
+.navTemplateWrap2 .navTop_list li.active .a_bottom, .navTemplateWrap2 .navTop_list li:hover .a_bottom{-webkit-transform:translate3d(0,100%,0);-moz-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0);}
+
+/* 示例导航3：黄剑剑 */
+.navTemplateWrap3 a{color: #777;}
+.navTemplateWrap3 .navTop_list {font-size: 0;white-space: nowrap;}
+.navTemplateWrap3 .navTop_list > li{position:relative; display: inline-block;border-radius: 8px; font-size: 16px;background-color: #fff;margin: 0 3px 0 25px;}
+.navTemplateWrap3 .navTop_list > li:last-child{margin-right: 25px;}
+.navTemplateWrap3 .navTop_list > li:hover{background-color: #F4F7F9!important;}
+.navTemplateWrap3 .navTop_list > li:hover > a{color: #444!important;}
+.navTemplateWrap3 .navTop_list > li.active{z-index: 2;background-color: #333!important;}
+.navTemplateWrap3 .navTop_list > li.active > a {color: #fff!important;}
+.navTemplateWrap3 .navTop_list > li > a{display: inline-block;padding: 10px 24px;}
+.navTemplateWrap3 .navTop_list > li:before,
+.navTemplateWrap3 .navTop_list > li:after {position: absolute;z-index: -1;content: " ";height: 100%;width: 44px;background-color: inherit;}
+.navTemplateWrap3 .navTop_list > li:before{border-top-left-radius: 8px; left:-12px;-webkit-transform:skew(-30deg, 0deg);-moz-transform:skew(-30deg, 0deg);transform:skew(-30deg, 0deg);}
+.navTemplateWrap3 .navTop_list > li:after{box-shadow: rgba(0,0,0,.1) 3px -2px 5px, inset rgba(255,255,255,.09) -1px 0;border-top-right-radius: 8px; right:-12px;-webkit-transform:skew(30deg, 0deg);-moz-transform:skew(30deg, 0deg);transform:skew(30deg, 0deg);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

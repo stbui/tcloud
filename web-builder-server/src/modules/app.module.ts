@@ -18,6 +18,7 @@ export class ApplicationModule implements NestModule {
             { path: '/page/all', method: RequestMethod.GET },
             { path: '/page', method: RequestMethod.GET },
             { path: '/page/*', method: RequestMethod.ALL },
+            { path: '/template/*', method: RequestMethod.ALL },
         );
     }
 }

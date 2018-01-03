@@ -3,7 +3,7 @@ define(["pageCommon", "pageHeader"], function(_pCommon, _ph) {
 	//修改页面信息的功能---待修改
 	pageSet.modifyonlyPage = function(pageid,seoTitle,seoKeyword,seoDescn,name,domain,ishome){
 		var msg = [seoTitle,seoKeyword,seoDescn,domain,name] ,pageId = pageid;
-		_pCommon.ajax('POST',URLPATH+'design/page/seo',{"pageId":pageId,"home":ishome,"name":name,"domain":domain,"title":seoTitle,"keywords":seoKeyword,"description":seoDescn,"random":Math.random()},false,'json',function(data,that,msg){
+		_pCommon.ajax('POST',URLPATH+'page/seo',{"pageId":pageId,"home":ishome,"name":name,"domain":domain,"title":seoTitle,"keywords":seoKeyword,"description":seoDescn,"random":Math.random()},false,'json',function(data,that,msg){
 			if(data.status==200){
 				that.yxpageInfoCatch(pageId, function() {
 					if(pageId==USERPAGEID){

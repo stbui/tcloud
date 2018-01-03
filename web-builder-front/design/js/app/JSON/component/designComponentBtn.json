@@ -1,0 +1,54 @@
+{
+    "json": [
+        {
+            "model": "<a class=\"wqd-button wqdComponentBtn1\" wqdBtnBorder=\"false\" ondragstart=\"return false;\"><em>了解详情<\/em><\/a>", 
+            "html": "<a class=\"wqd-button\" style=\"width:120px;height:45px;background:#3d9be9;\" ondragstart=\"return false;\"><em>了解详情<\/em><\/a>",
+            "className": "wqdComponentBtn1"
+        },
+        {
+            "model": "<a class=\"wqd-button wqdComponentBtn2\" wqdBtnBorder=\"false\" ondragstart=\"return false;\"><em>了解详情<\/em><\/a>", 
+            "html": "<a class=\"wqd-button\" style=\"width:120px;height:45px;color:#75c55d;background:#fff;border:2px solid #75c55d;border-radius:5px;\" ondragstart=\"return false;\"><em>了解详情<\/em><\/a>",
+            "className": "wqdComponentBtn2"
+        },
+        {
+            "model": "<a class=\"wqd-button wqdComponentBtn3\" wqdBtnBorder=\"true\" ondragstart=\"return false;\"><div class=\"componentTR50 hoverTrue\"><\/div><div class=\"componentBR50 hoverTrue\"><\/div><div class=\"componentCenter\"><\/div><em>Go Shoping<\/em><\/a>", 
+            "html": "<a class=\"wqd-button\" style=\"position:relative;width:120px;height:40px;color:#fff;overflow:hidden;\" ondragstart=\"return false;\"><div style=\"position:absolute;right:0;bottom:50% !important;border-left:0;border-right:100px solid transparent !important;border-bottom:100px solid #e6b871;\"><\/div><div style=\"position:absolute;right:0;top:50% !important;border-left:0;border-right:100px solid transparent !important;border-top:100px solid #e6b871;\"><\/div><div style=\"position:absolute;top:0;bottom:0;left:0;right:100px;background:#e6b871;\"><\/div><em>Go Shoping<\/em><\/a>",
+            "className": "wqdComponentBtn3"
+        },
+        {
+            "model": "<a class=\"wqd-button wqdComponentBtn4\" wqdBtnBorder=\"true\" ondragstart=\"return false;\"><div class=\"componentTL50 hoverTrue\"><\/div><div class=\"componentBL50 hoverTrue\"><\/div><div class=\"componentCenter\"><\/div><em>点击查看<\/em><\/a>", 
+            "html": "<a class=\"wqd-button\" style=\"position:relative;width:120px;height:40px;color:#fff;overflow:hidden;\" ondragstart=\"return false;\"><div style=\"position:absolute;left:0;bottom:50% !important;border-left:100px solid transparent !important;border-right:0;border-bottom:100px solid #2b6ca3;\"><\/div><div style=\"position:absolute;left:0;top:50% !important;border-left:100px solid transparent !important;border-right:0;border-top:100px solid #2b6ca3;\"><\/div><div style=\"position:absolute;top:0;bottom:0;left:100px;right:0;background:#2b6ca3;\"><\/div><em>点击查看<\/em><\/a>",
+            "className": "wqdComponentBtn4"
+        },
+        {
+            "model": "<a class=\"wqd-button wqdComponentBtn5\" wqdBtnBorder=\"false\" ondragstart=\"return false;\"><em>点击查看<\/em><\/a>", 
+            "html": "<a class=\"wqd-button\" style=\"height:70px;width:70px;color:#fff;border-radius:50%;background:#337ab7;\" ondragstart=\"return false;\"><em>点击查看<\/em><\/a>",
+            "className": "wqdComponentBtn5"
+        },
+        {
+            "model": "<a class=\"wqd-button wqdComponentBtn6\" wqdBtnBorder=\"false\" ondragstart=\"return false;\"><em>查看<\/em><\/a>", 
+            "html": "<a class=\"wqd-button\" style=\"height:70px;width:70px;color:#fff;background:#deb184;\" ondragstart=\"return false;\"><em>查看<\/em><\/a>",
+            "className": "wqdComponentBtn6"
+        },
+        {
+            "model": "<a class=\"wqd-button wqdComponentBtn7\" wqdBtnBorder=\"true\" ondragstart=\"return false;\"><div class=\"componentTL50 hoverTrue\"><\/div><div class=\"componentBL50 hoverTrue\"><\/div><div class=\"componentCenter\"><\/div><div class=\"componentTR50 hoverTrue\"><\/div><div class=\"componentBR50 hoverTrue\"><\/div><em>点击查看<\/em><\/a>", 
+            "html": "<a class=\"wqd-button\" style=\"position:relative;height:70px;width:83px;color:#fff;overflow:hidden;\" ondragstart=\"return false;\"><div style=\"position:absolute;left:0;bottom:50% !important;border-left:58px solid transparent !important;border-right:0;border-bottom:100px solid #3dc288;\"><\/div><div style=\"position:absolute;left:0;top:50% !important;border-left:58px solid transparent !important;border-right:0;border-top:100px solid #3dc288;\"><\/div><div style=\"position:absolute;top:0;bottom:0;left:58px;right:58px;background:#3dc288;\"><\/div><div style=\"position:absolute;right:0;bottom:50% !important;border-left:0;border-right:58px solid transparent !important;border-bottom:100px solid #3dc288;\"><\/div><div style=\"position:absolute;right:0;top:50% !important;border-left:0;border-right:58px solid transparent !important;border-top:100px solid #3dc288;\"><\/div><em>点击查看<\/em><\/a>",
+            "className": "wqdComponentBtn7"
+        },
+        {
+            "model": "<a class=\"wqd-button wqdComponentBtn8\" wqdBtnBorder=\"false\" ondragstart=\"return false;\"><em>了解详情<\/em><\/a>", 
+            "html": "<a class=\"wqd-button\" style=\"width:120px;height:45px;background:#3dc288;border-top-right-radius: 20px;border-bottom-left-radius: 20px;\" ondragstart=\"return false;\"><em>了解详情<\/em><\/a>",
+            "className": "wqdComponentBtn8"
+        },
+        {
+            "model": "<a class=\"wqd-button wqdComponentBtn9\" wqdBtnBorder=\"true\" ondragstart=\"return false;\"><div class=\"componentBR0 hoverTrue\"><\/div><div class=\"componentTR0 hoverTrue\"><\/div><div class=\"componentCenter\"><\/div><em>详情<\/em><\/a>", 
+            "html": "<a class=\"wqd-button\" style=\"position:relative;width:120px;height:40px;color:#fff;overflow:hidden;\" ondragstart=\"return false;\"><div style=\"position:absolute;right:0;bottom:0 !important;border-left:0;border-right:100px solid transparent !important;border-bottom:100px solid #3d9be9;\"><\/div><div style=\"position:absolute;right:0;top:0 !important;border-left:0;border-right:100px solid transparent !important;border-top:100px solid #3d9be9;\"><\/div><div style=\"position:absolute;top:0;bottom:0;left:0;right:100px;background:#3d9be9;\"><\/div><em>详情<\/em><\/a>",
+            "className": "wqdComponentBtn9"
+        },
+        {
+            "model": "<a class=\"wqd-button wqdComponentBtn10\" wqdBtnBorder=\"true\" ondragstart=\"return false;\"><div class=\"componentBL0 hoverTrue\"><\/div><div class=\"componentTL0 hoverTrue\"><\/div><div class=\"componentCenter\"><\/div><div class=\"componentBR0 hoverTrue\"><\/div><div class=\"componentTR0 hoverTrue\"><\/div><em>点击查看<\/em><\/a>", 
+            "html": "<a class=\"wqd-button\" style=\"position:relative;width:120px;height:45px;color:#fff;overflow:hidden;\" ondragstart=\"return false;\"><div style=\"position:absolute;left:0;bottom:0 !important;border-left:58px solid transparent !important;border-right:0;border-bottom:100px solid #01b1af;\"><\/div><div style=\"position:absolute;left:0;top:0 !important;border-left:58px solid transparent !important;border-right:0;border-top:100px solid #01b1af;\"><\/div><div style=\"position:absolute;top:0;bottom:0;left:58px;right:58px;background:#01b1af;\"><\/div><div style=\"position:absolute;right:0;bottom:0 !important;border-left:0;border-right:58px solid transparent !important;border-bottom:100px solid #01b1af;\"><\/div><div style=\"position:absolute;right:0;top:0 !important;border-left:0;border-right:58px solid transparent !important;border-top:100px solid #01b1af;\"><\/div><em>点击查看<\/em><\/a>",
+            "className": "wqdComponentBtn10"
+        } 
+    ]
+}

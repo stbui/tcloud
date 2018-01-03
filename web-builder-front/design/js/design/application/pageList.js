@@ -7,7 +7,9 @@ define(['pageHeader', 'pageCommon', 'buildList', 'pageSet','utility','pageCatch'
 		window.htmlCenter = $('#HTMLDATACENTER .wqdView');
 		window.htmlFooter = $('#HTMLDATAFOOTER .wqdView');
 		window.partListArr = [];
-		_pCommon.ajax('GET',URLPATH+'api/all',{"random":Math.random(),"siteId":USERSITEID},false,'json',function(data,that){
+		// debug
+		var url = URLPATH+'page/all';
+		_pCommon.ajax('GET',url,{"random":Math.random(),"siteId":USERSITEID},false,'json',function(data,that){
 			that.pagehf = [];
 			// that.noSave = true;
 			window.noSave = true;//丢失页面临时 noSave为true时不可保存
@@ -247,8 +249,8 @@ define(['pageHeader', 'pageCommon', 'buildList', 'pageSet','utility','pageCatch'
 		//AJAX 获取通条类型列表
 		var typeUrl = '';
 
-		typeUrl = !$('#wqdIphonePage').length ? URLPATH+'api/section' : URLPATH+'api/phone';
-
+		typeUrl = !$('#wqdIphonePage').length ? URLPATH+'template/section' : URLPATH+'api/phone';
+		
 		_pCommon.ajax('GET',typeUrl,{"random":Math.random()},false,'json',function(data,that,msg){
 			//类型列表
 			var html = '';
@@ -290,12 +292,12 @@ define(['pageHeader', 'pageCommon', 'buildList', 'pageSet','utility','pageCatch'
 		if(typeId == "00100") {
 			typeId = $("#wqdaddcolD ul.category-list li").eq(1).attr("type");
 		}
-		typeUrl = URLPATH+'api/section1?cateid='+typeId+'&pageSize=12&random='+Math.random();
+		typeUrl = URLPATH+'template/section/list?cateid='+typeId+'&pageSize=12&random='+Math.random();
 		if(typeId == 12) {//尾--PC
-			typeUrl = URLPATH+'api/footer?pageSize=12&random='+Math.random();
+			typeUrl = URLPATH+'template/footer?pageSize=12&random='+Math.random();
 		}
 		if(typeId == 21) {//头--PC
-			typeUrl = URLPATH+'api/header/?pageSize=12&random='+Math.random()
+			typeUrl = URLPATH+'template/header/?pageSize=12&random='+Math.random()
 		}
 		//AJAX 获取通条所有数据列表
 		_pCommon.ajax('GET',typeUrl,{"random":Math.random()},false,'json',function(data,that,msg){
@@ -585,7 +587,7 @@ define(['pageHeader', 'pageCommon', 'buildList', 'pageSet','utility','pageCatch'
 		li = $('#wqdpageContentD .pagedeatllist li.plist[data=cont]:last');
 
 		url = URLPATH + 'design/newPage/' + templateId;
-		url = URLPATH + 'api/page/add?id=' + templateId;
+		url = URLPATH + 'page/newPage/' + templateId;
 
 		//新页面条内容--版本2---通过pageType判断是否是新闻页
 		_pCommon.ajax('GET',url,{"siteId":USERSITEID,"pageType":pageType,"random":Math.random()},false,'json',function(data,that){
@@ -629,7 +631,8 @@ define(['pageHeader', 'pageCommon', 'buildList', 'pageSet','utility','pageCatch'
 		var node = "";
 		//AJAX 获取通条类型列表
 		var typeUrl = URLPATH+'api/page';
-
+		// debug
+		typeUrl = 'http://127.0.0.1:3000/page';
 		_pCommon.ajax('GET',typeUrl,{"random":Math.random()},false,'json',function(data,that,msg){
 			//类型列表
 			var html = '';
@@ -657,6 +660,8 @@ define(['pageHeader', 'pageCommon', 'buildList', 'pageSet','utility','pageCatch'
 		if(typeId == "123456789") {
 			typeUrl = URLPATH+'sys/template/query/article/'+nowpage+'?pageSize=12&random='+Math.random();
 		}
+		// debug
+		typeUrl = 'http://127.0.0.1:3000/page?cateid='+typeId+'&pageSize=12&random='+Math.random();
 
 		//AJAX 获取通条所有数据列表
 		_pCommon.ajax('GET',typeUrl,{},false,'json',function(data,that,msg){
@@ -931,7 +936,10 @@ define(['pageHeader', 'pageCommon', 'buildList', 'pageSet','utility','pageCatch'
 	 *
 	 */
 	pageList.loadhf = function(msg) {
-		_pCommon.ajax('GET',URLPATH+'common/site/read?random='+Math.random(),{"siteId":USERSITEID},false,'json',function(data,that){
+		// debug
+		var url = URLPATH+'common/site/read?random='+Math.random();
+		url = 'http://127.0.0.1:3000/site/info';
+		_pCommon.ajax('GET',url,{"siteId":USERSITEID},false,'json',function(data,that){
 			if(data.status==200){
 				var header = data.data.header.replace(/>.wqdAreaView\s.wqdSectiondiv/g,">.wqdAreaView\s.wqdSectiondiv");
 				that.pagehf[0] = header;
@@ -994,7 +1002,7 @@ define(['pageHeader', 'pageCommon', 'buildList', 'pageSet','utility','pageCatch'
 		_ph.setLoadingStyle(true,"加载中…");
 		$.ajax({
 			type:"GET",
-			url:URLPATH+"design/page/read",
+			url:URLPATH+"page/" + (viewId || USERPAGEID),
 			dataType:"json",
 			data:{
 				"random":Math.random(),
@@ -1090,7 +1098,7 @@ define(['pageHeader', 'pageCommon', 'buildList', 'pageSet','utility','pageCatch'
 
 		//新页面条移除--版本2
 		var pageId = _self.attr('pageid');
-		_pCommon.ajax('POST',URLPATH+'design/page/delete',{"pageId":pageId},false,'json',function(data,that,_self){
+		_pCommon.ajax('POST',URLPATH+'page/delete',{"pageId":pageId},false,'json',function(data,that,_self){
 			if(data.status==200){
 				//判断删除的是否为首页，首页为特殊操作
 				if(_self.find("i").hasClass("home")) {
