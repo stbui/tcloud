@@ -37,11 +37,3 @@ WebScokets模块（基于scoket.io，虽然你可以使用任何其他使用适�
 消息类型支持的反应微服务（内置transport属性，决定使用TCP或者Redis，但是你可以选择使用任何其他使用CustomTransportStrategy的交流形式）。
 异常处理layer，异常过滤器，同步和异步pipes layer。
 测试工具
-
-
-
-/page
-/page/all
-
-
-https://auth0.com/blog/nestjs-brings-typescript-to-nodejs-and-express/
